@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Колмаков](https://up.htmlacademy.ru/adaptive/14/user/508859).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Рашкован](https://up.htmlacademy.ru/adaptive/14/user/196306).
 
 ---
 

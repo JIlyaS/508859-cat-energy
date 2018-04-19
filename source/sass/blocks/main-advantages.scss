@@ -1,0 +1,13 @@
+.main-advantages {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 22px;
+}
+
+.main-advantages__title {
+  @include font(36px, 60px, $main-font-color);
+}
+
+.main-advantages__list {
+  margin-top: 30px;
+}

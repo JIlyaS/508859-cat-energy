@@ -1,0 +1,57 @@
+.main-example {
+
+  padding-bottom: 38px;
+
+  background-color: $add-back-color;
+}
+
+.main-example__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-example__title {
+  margin-bottom: 30px;
+
+  @include font(36px, 60px, $main-font-color);
+}
+
+.main-example__description {
+  margin-bottom: 27px;
+
+  @include font(14px, 18px, $paragraph-font-color);
+}
+
+.main-example__result {
+  padding-top: 16px;
+  padding-bottom: 10px;
+
+  text-transform: uppercase;
+
+  @include font(24px, 24px, $main-font-color);
+}
+
+.main-example__result-description {
+  font-family: Arial, sans-serif;
+
+  text-transform: lowercase;
+
+  @include font(12px, 12px, $paragraph-font-color);
+}
+
+.main-example__cost {
+  text-transform: uppercase;
+  text-align: center;
+
+  @include font(14px, 20px, $main-font-color);
+}
+
+.main-example__range-start,
+.main-example__range-end {
+  border: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  @include font(16px, 20px, $main-font-color);
+}

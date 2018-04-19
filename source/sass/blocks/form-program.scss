@@ -1,0 +1,80 @@
+.form-program__info-block,
+.form-program__radio-block,
+.form-program__owner-block,
+.form-program__comment-block,
+.form-program__checkbox-block,
+.form-program__submit-block {
+  margin: 0;
+  padding: 0;
+
+
+  border: none;
+}
+
+.form-program__info-block {
+  padding-bottom: 10px;
+}
+
+.form-program__element-block {
+  margin-bottom: 14px;
+}
+
+.form-program__title {
+  text-transform: uppercase;
+
+  @include font(16px, 18px, $main-font-color);
+}
+
+.form-program__radio-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-program__radio-item {
+  list-style: none;
+}
+
+.form-program__title {
+  text-transform: uppercase;
+
+  @include font(16px, 18px, $main-font-color);
+}
+
+.form-program__owner-block {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.form-program__owner-title {
+  @include font(24px, 24px, $main-font-color);
+}
+
+.form-program__comment-block {
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+.form-program__comment-title {
+  margin-bottom: 32px;
+
+  @include font(24px, 24px, $main-font-color);
+}
+
+.form-program__comment {
+  resize: none;
+}
+
+.form-program__checkbox-block {
+  margin-bottom: 12px;
+}
+
+.form-program__submit {
+  @include font(16px, 20px, $add-font-color);
+
+}
+
+.form-program__note {
+  font-family: Arial, sans-serif;
+
+  @include font(16px, 20px, $paragraph-font-color);
+}

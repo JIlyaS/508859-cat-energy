@@ -3,35 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <a href="#" class="page-header__logo-link">
       <img class="page-header__logo-image" src="http://placehold.it/20x30" alt="Логотип магазина Кэт Энерджи">
     </a>
-    <h1 class="page-header__title">Cat<span class="page-header__title-light">Energy</span></h1>
+   <img class="page-header__title-image" src="http://placehold.it/100x30" alt="Cat Energy">
+   <button class="main-nav__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
-      <button class="main-nav__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a>Главная</a></li>
-        <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+      <ul class="main-nav__list nav-list">
+        <li class="nav-list__item"><a class="nav-list__item-link" href="index.html">Главная</a></li>
+        <li class="nav-list__item"><a class="nav-list__item-link" href="catalog.html">Каталог продукции</a></li>
+        <li class="nav-list__item"><a class="nav-list__item-link">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
   <main class="form-page">
     <h2 class="form-page__title">Подбор программы</h2>
-    <p class="form-page__desc">
+    <p class="form-page__description">
       Заполните анкету и мы подберем программу питания для вашего кота
     </p>
     <form class="form-program" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form-program__info-block">
-        <label class="form-program__title" for="name">Имя:<sup>*</sup></label>
-        <input class="form-program__name" id="name" type="text" name="cat-name" placeholder="БАРСИК" required>
-        <label class="form-program__title" for="weight">Вес (КГ):<sup>*</sup></label>
-        <input class="form-program__weight" id="weight" type="text" name="cat-weight" placeholder="7" required>
-        <label class="form-program__title" for="age">Вес (КГ):<sup>*</sup></label>
-        <input class="form-program__age" id="age" type="text" name="cat-age" placeholder="7">
+        <div class="form-program__element-block">
+          <label class="form-program__title" for="name">Имя:<sup>*</sup></label>
+          <input class="form-program__name" id="name" type="text" name="cat-name" placeholder="БАРСИК" required>
+        </div>
+        <div class="form-program__element-block">
+          <label class="form-program__title" for="weight">Вес (КГ):<sup>*</sup></label>
+          <input class="form-program__weight" id="weight" type="text" name="cat-weight" placeholder="7" required>
+        </div>
+        <div class="form-program__element-block">
+          <label class="form-program__title" for="age">Возраст (лет):<sup>*</sup></label>
+          <input class="form-program__age" id="age" type="text" name="cat-age" placeholder="7">
+        </div>
       </fieldset>
       <fieldset class="form-program__radio-block">
         <ul class="form-program__radio-list">
@@ -51,10 +58,14 @@
       </fieldset>
       <fieldset class="form-program__owner-block">
         <legend class="form-program__owner-title">Контактные данные (владельца кота)</legend>
-         <label class="form-program__title" for="boss-email">E-MAIL:<sup>*</sup></label>
-         <input class="form-program__owner" id="boss-email" type="email" name="boss-email" placeholder="kuklachev@gmail.com" required>
-         <label class="form-program__title" for="boss-phone">Телефон:<sup>*</sup></label>
-         <input class="form-program__owner" id="boss-phone" type="tel" name="boss-phone" placeholder="8(960)900-60-90" required>
+          <div class="form-program__element-block">
+            <label class="form-program__title" for="boss-email">E-MAIL:<sup>*</sup></label>
+            <input class="form-program__owner" id="boss-email" type="email" name="boss-email" placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="form-program__element-block">
+            <label class="form-program__title" for="boss-phone">Телефон:<sup>*</sup></label>
+            <input class="form-program__owner" id="boss-phone" type="tel" name="boss-phone" placeholder="8(960)900-60-90" required>
+          </div>
       </fieldset>
       <fieldset class="form-program__comment-block">
         <legend class="form-program__comment-title">Комментарий</legend>
@@ -82,7 +93,7 @@
         </ul>
       </fieldset>
       <fieldset class="form-program__submit-block">
-        <button class="form-program__submit" type="submit">Отправить заявку</button>
+        <button class="form-program__submit button" type="submit">Отправить заявку</button>
         <small class="form-program__note">
           <sup>*</sup> — Обязательные поля
         </small>
@@ -96,20 +107,22 @@
     </div>
     <div class="page-footer__card"></div>
     <div class="page-footer__footer-bottom">
-      <h2 class="page-footer__title">Cat<span class="page-footer__title-light">Energy</span></h2>
+      <img class="page-footer__logo-image" src="http://placehold.it/20x30" alt="Кэт Энерджи">
       <ul class="page-footer__socials site-socials">
-        <li class="page-footer__item">
+        <li class="site-socials__item">
             <a class="site-socials__link site-socials__link--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
           </li>
-          <li class="page-footer__item">
-            <a class="site-socials__link  site-socials__link--instagram"><span class="visually-hidden">Инстаграм</span></a>
+          <li class="site-socials__item">
+            <a class="site-socials__link  site-socials__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span></a>
           </li>
-          <li class="page-footer__item">
-            <a class="site-socials__link  site-socials__link--facebook"><span class="visually-hidden">Facebook</span></a>
+          <li class="site-socials__item">
+            <a class="site-socials__link  site-socials__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
       </ul>
-      <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="page-footer__htmlacademy-imglink" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__logo-htmlacademy" src="http://placehold.it/20x30" width="150" height="100" alt="Логотип HTML Academy"></a>
+      <div class="page-footer__logo-block">
+        <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__htmlacademy-imglink" href="https://htmlacademy.ru/intensive/adaptive"><img class="page-footer__logo-htmlacademy" src="http://placehold.it/20x30" width="150" height="100" alt="Логотип HTML Academy"></a>
+      </div>
     </div>
   </footer>
 </body>

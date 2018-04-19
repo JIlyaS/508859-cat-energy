@@ -1,0 +1,28 @@
+.program {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: $add-back-color;
+
+  list-style: none;
+}
+
+.program__title {
+  font-family: "Oswald", Arial, sans-serif;
+  text-transform: uppercase;
+
+  @include font(24px, 37px, $main-font-color);
+}
+
+.program__description {
+  font-family: Arial, sans-serif;
+
+  @include font(14px, 18px, $paragraph-font-color);
+}
+
+.program__link {
+  font-family: "Oswald", Arial, sans-serif;
+  text-transform: uppercase;
+
+  @include font(16px, 16px, $main-font-color);
+}

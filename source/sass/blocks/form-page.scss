@@ -1,0 +1,12 @@
+.form-page {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-page__title {
+  @include font(36px, 60px, $main-font-color);
+}
+
+.form-page__description {
+  @include font(14px, 18px, $main-font-color);
+}

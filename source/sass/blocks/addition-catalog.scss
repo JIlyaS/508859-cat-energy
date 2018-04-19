@@ -1,0 +1,38 @@
+.additional-catalog {
+  margin-bottom: 40px;
+}
+
+.additional-catalog__title {
+  @include font(24px, 24px, $main-font-color);
+}
+
+.additional-catalog__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.additional-catalog__product-title {
+  text-transform: uppercase;
+
+  @include font(16px, 16px, $main-font-color);
+}
+
+.additional-catalog__product-block {
+  margin-bottom: 15px;
+}
+
+.additional-catalog__product-quantity {
+  text-align: left;
+
+  @include font(14px, 14px, $paragraph-font-color);
+}
+
+.additional-catalog__product-cost {
+  text-align: right;
+
+  @include font(14px, 14px, $paragraph-font-color);
+}
+
+.additional-catalog__product-button {
+  @include font(16px, 20px, $add-font-color);
+}

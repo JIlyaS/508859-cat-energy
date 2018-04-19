@@ -1,0 +1,8 @@
+.site-list__item {
+  margin-bottom: 20px;
+  padding-left: 80px;
+
+  list-style: none;
+
+  @include font(14px, 18px, $paragraph-font-color);
+}

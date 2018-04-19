@@ -1,0 +1,26 @@
+.main-header__block {
+  text-align: center;
+
+  background-color: $components-color;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+.main-header {
+  margin-bottom: 22px;
+}
+
+.main-header__title {
+  @include font(36px, 36px, $add-font-color);
+}
+
+.main-header__desc {
+  @include font(14px, 14px, $add-font-color);
+
+  text-transform: uppercase;
+}
+
+.main-header__button {
+  @include font(14px, 18px, $add-font-color);
+}

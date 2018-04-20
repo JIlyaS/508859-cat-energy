@@ -19,9 +19,10 @@
 }
 
 .form-program__title {
+  font-size: 16px;
+  line-height: 18px;
+  color: $main-font-color;
   text-transform: uppercase;
-
-  @include font(16px, 18px, $main-font-color);
 }
 
 .form-program__radio-block {
@@ -37,7 +38,9 @@
 }
 
 .form-program__owner-title {
-  @include font(24px, 24px, $main-font-color);
+  font-size: 24px;
+  line-height: 24px;
+  color: $main-font-color;
 }
 
 .form-program__comment-block {
@@ -47,7 +50,9 @@
 .form-program__comment-title {
   margin-bottom: 32px;
 
-  @include font(24px, 24px, $main-font-color);
+  font-size: 24px;
+  line-height: 24px;
+  color: $main-font-color;
 }
 
 .form-program__comment {
@@ -63,11 +68,14 @@
 }
 
 .form-program__submit {
-  @include font(16px, 20px, $add-font-color);
+  font-size: 16px;
+  line-height: 20px;
+  color: $add-font-color;
 }
 
 .form-program__note {
   font-family: "Arial", sans-serif;
-
-  @include font(16px, 20px, $paragraph-font-color);
+  font-size: 16px;
+  line-height: 20px;
+  color: $paragraph-font-color;
 }

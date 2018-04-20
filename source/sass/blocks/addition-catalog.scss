@@ -3,7 +3,9 @@
 }
 
 .additional-catalog__title {
-  @include font(24px, 24px, $main-font-color);
+  font-size: 24px;
+  line-height: 24px;
+  color: $main-font-color;
 }
 
 .additional-catalog__item {
@@ -11,9 +13,10 @@
 }
 
 .additional-catalog__product-title {
+  font-size: 16px;
+  line-height: 16px;
+  color: $main-font-color;
   text-transform: uppercase;
-
-  @include font(16px, 16px, $main-font-color);
 }
 
 .additional-catalog__product-block {
@@ -21,17 +24,21 @@
 }
 
 .additional-catalog__product-quantity {
+  font-size: 14px;
+  line-height: 14px;
+  color: $paragraph-font-color;
   text-align: left;
-
-  @include font(14px, 14px, $paragraph-font-color);
 }
 
 .additional-catalog__product-cost {
+  font-size: 14px;
+  line-height: 14px;
+  color: $paragraph-font-color;
   text-align: right;
-
-  @include font(14px, 14px, $paragraph-font-color);
 }
 
 .additional-catalog__product-button {
-  @include font(16px, 20px, $add-font-color);
+  font-size: 16px;
+  line-height: 20px;
+  color: $add-font-color;
 }

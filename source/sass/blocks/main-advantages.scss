@@ -3,7 +3,9 @@
 }
 
 .main-advantages__title {
-  @include font(36px, 60px, $main-font-color);
+  font-size: 36px;
+  line-height: 60px;
+  color: $main-font-color;
 }
 
 .main-advantages__list {

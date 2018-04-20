@@ -3,9 +3,13 @@
 }
 
 .form-page__title {
-  @include font(36px, 60px, $main-font-color);
+  font-size: 36px;
+  line-height: 60px;
+  color: $main-font-color;
 }
 
 .form-page__description {
-  @include font(14px, 18px, $main-font-color);
+  font-size: 14px;
+  line-height: 18px;
+  color: $main-font-color;
 }

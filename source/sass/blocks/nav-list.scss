@@ -6,9 +6,10 @@
 
 .nav-list__item-link {
   font-family: "Oswald Medium", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: $main-font-color;
   text-transform: uppercase;
 
   cursor: pointer;
-
-  @include font(20px, 20px, $main-font-color);
 }

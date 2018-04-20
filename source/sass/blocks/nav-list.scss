@@ -1,13 +1,11 @@
 .nav-list__item {
-
   text-align: center;
 
-  list-style: none;
-
+  @include reset-list();
 }
 
 .nav-list__item-link {
-  font-family: "Oswald Medium", Arial, sans-serif;
+  font-family: "Oswald Medium", "Arial", sans-serif;
   text-transform: uppercase;
 
   cursor: pointer;

@@ -1,29 +1,29 @@
 @font-face {
-    font-family:"Oswald";
-    src: url('../fonts/oswaldregular.woff2') format('woff2'),
-    url('../fonts/oswaldregular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-2074;
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: u+0020-2074;
 }
 
 @font-face {
-    font-family:"Oswald Medium";
-    src: url('../fonts/oswaldmedium.woff2') format('woff2'),
-    url('../fonts/oswaldmedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-2074;
+  font-family: "Oswald Medium";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: u+0020-2074;
 }
 
 body {
   margin: 0 auto;
 
-  font-family: "Oswald", Arial, sans-serif;
-  // font-size: 16px;
-  // line-height: 22px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 400;
   color: $main-font-color;
 
@@ -34,30 +34,27 @@ a {
   text-decoration: none;
 }
 
-// .visually-hidden:not(:focus):not(:active),
-// input[type="checkbox"].visually-hidden,
-// input[type="radio"].visually-hidden {
-//     position: absolute;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     border: 0;
-//     padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-//     white-space: nowrap;
+  white-space: nowrap;
 
-//     -webkit-clip-path: inset(100%);
-
-//     clip-path: inset(100%);
-//     clip: rect(0 0 0 0);
-//     overflow: hidden;
-// }
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .button {
   text-transform: uppercase;
   border: none;
 
   background-color: $components-color;
-
 }

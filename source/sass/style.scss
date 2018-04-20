@@ -1,11 +1,8 @@
-@import
-  "utils/normalize.scss",
+@import "utils/normalize.scss",
   "utils/variables.scss",
   "utils/scaffolding.scss",
   "utils/mixins.scss";
-
-@import
-  "blocks/page-header.scss",
+@import "blocks/page-header.scss",
   "blocks/main-nav.scss",
   "blocks/nav-list.scss",
   "blocks/page-main.scss",
@@ -20,6 +17,6 @@
   "blocks/form-page.scss",
   "blocks/form-program.scss",
   "blocks/catalog-page.scss",
+  "blocks/main-catalog.scss",
   "blocks/addition-catalog.scss",
   "blocks/gifts.scss";
-

@@ -3,13 +3,11 @@
 }
 
 .page-footer__address-block {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 .page-footer__socials {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 .page-footer__invitation {
@@ -19,7 +17,7 @@
 }
 
 .page-footer__address {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: normal;
 
   @include font(14px, 20px, $paragraph-font-color);
@@ -32,12 +30,11 @@
 }
 
 .page-footer__logo-block {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 .page-footer__htmlacademy-link {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 
   @include font(16px, 16px, $paragraph-font-color);
 }

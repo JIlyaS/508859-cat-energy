@@ -1,13 +1,11 @@
 .main-example {
-
   padding-bottom: 38px;
 
   background-color: $add-back-color;
 }
 
 .main-example__container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 .main-example__title {
@@ -23,8 +21,7 @@
 }
 
 .main-example__result {
-  padding-top: 16px;
-  padding-bottom: 10px;
+  padding: 16px 0 10px 0;
 
   text-transform: uppercase;
 
@@ -32,7 +29,7 @@
 }
 
 .main-example__result-description {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 
   text-transform: lowercase;
 

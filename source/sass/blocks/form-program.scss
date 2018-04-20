@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
 
-
   border: none;
 }
 
@@ -26,23 +25,15 @@
 }
 
 .form-program__radio-block {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .form-program__radio-item {
-  list-style: none;
-}
-
-.form-program__title {
-  text-transform: uppercase;
-
-  @include font(16px, 18px, $main-font-color);
+  @include reset-list();
 }
 
 .form-program__owner-block {
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding: 34px 0;
 }
 
 .form-program__owner-title {
@@ -50,8 +41,7 @@
 }
 
 .form-program__comment-block {
-  margin-top: 20px;
-  margin-bottom: 33px;
+  margin: 20px 0 33px 0;
 }
 
 .form-program__comment-title {
@@ -68,13 +58,16 @@
   margin-bottom: 12px;
 }
 
+.form-program__checkbox-item {
+  @include reset-list();
+}
+
 .form-program__submit {
   @include font(16px, 20px, $add-font-color);
-
 }
 
 .form-program__note {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 
   @include font(16px, 20px, $paragraph-font-color);
 }

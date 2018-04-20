@@ -1,0 +1,30 @@
+.program {
+  padding: 0 20px;
+
+  background-color: $add-back-color;
+
+  list-style: none;
+}
+
+.program__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  color: $main-font-color;
+  text-transform: uppercase;
+}
+
+.program__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $paragraph-font-color;
+}
+
+.program__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $main-font-color;
+  text-transform: uppercase;
+}

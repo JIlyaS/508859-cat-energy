@@ -1,0 +1,16 @@
+.gifts {
+  text-align: center;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $components-color;
+}
+
+.gifts__description {
+  padding-top: 188px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $add-font-color;
+}

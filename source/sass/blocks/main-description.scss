@@ -1,0 +1,9 @@
+.main-descrition {
+  padding: 0 20px;
+}
+
+.main-descrition__item {
+  margin-bottom: 20px;
+
+  @include reset-list();
+}

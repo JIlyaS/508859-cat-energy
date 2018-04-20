@@ -1,0 +1,44 @@
+.page-footer {
+  background-color: $add-back-color;
+}
+
+.page-footer__address-block {
+  padding: 0 20px;
+}
+
+.page-footer__socials {
+  padding: 0 20px;
+}
+
+.page-footer__invitation {
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-font-color;
+  text-transform: uppercase;
+}
+
+.page-footer__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $paragraph-font-color;
+}
+
+.page-footer__card {
+  background-color: #fdf7ef;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+.page-footer__logo-block {
+  padding: 0 20px;
+}
+
+.page-footer__htmlacademy-link {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $paragraph-font-color;
+}

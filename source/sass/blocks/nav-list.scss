@@ -1,0 +1,15 @@
+.nav-list__item {
+  text-align: center;
+
+  @include reset-list();
+}
+
+.nav-list__item-link {
+  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: $main-font-color;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}

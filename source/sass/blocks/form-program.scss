@@ -1,0 +1,81 @@
+.form-program__info-block,
+.form-program__radio-block,
+.form-program__owner-block,
+.form-program__comment-block,
+.form-program__checkbox-block,
+.form-program__submit-block {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form-program__info-block {
+  padding-bottom: 10px;
+}
+
+.form-program__element-block {
+  margin-bottom: 14px;
+}
+
+.form-program__title {
+  font-size: 16px;
+  line-height: 18px;
+  color: $main-font-color;
+  text-transform: uppercase;
+}
+
+.form-program__radio-block {
+  padding: 20px 0;
+}
+
+.form-program__radio-item {
+  @include reset-list();
+}
+
+.form-program__owner-block {
+  padding: 34px 0;
+}
+
+.form-program__owner-title {
+  font-size: 24px;
+  line-height: 24px;
+  color: $main-font-color;
+}
+
+.form-program__comment-block {
+  margin: 20px 0 33px 0;
+}
+
+.form-program__comment-title {
+  margin-bottom: 32px;
+
+  font-size: 24px;
+  line-height: 24px;
+  color: $main-font-color;
+}
+
+.form-program__comment {
+  resize: none;
+}
+
+.form-program__checkbox-block {
+  margin-bottom: 12px;
+}
+
+.form-program__checkbox-item {
+  @include reset-list();
+}
+
+.form-program__submit {
+  font-size: 16px;
+  line-height: 20px;
+  color: $add-font-color;
+}
+
+.form-program__note {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $paragraph-font-color;
+}

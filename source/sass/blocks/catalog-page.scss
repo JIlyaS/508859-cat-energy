@@ -1,3 +1,9 @@
 .catalog-page {
-  padding: 0 20px;
+  border-top: 1px solid $add-components-color;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page {
+    border-top: none;
+  }
 }

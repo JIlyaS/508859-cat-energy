@@ -19,6 +19,7 @@
 }
 
 body {
+  // width: 100%;
   margin: 0 auto;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -32,6 +33,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -50,11 +56,4 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.button {
-  text-transform: uppercase;
-  border: none;
-
-  background-color: $components-color;
 }

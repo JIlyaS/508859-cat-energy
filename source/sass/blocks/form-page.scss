@@ -1,15 +1,41 @@
 .form-page {
-  padding: 0 20px;
+  border-top: 1px solid $add-components-color;
 }
 
 .form-page__title {
+  margin-top: 15px;
+  padding: 0 20px;
+
   font-size: 36px;
   line-height: 60px;
   color: $main-font-color;
 }
 
 .form-page__description {
+  margin-top: -5px;
+  margin-right: 20px;
+  padding: 0 20px;
+
   font-size: 14px;
   line-height: 18px;
   color: $main-font-color;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__title {
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+
+    font-size: 60px;
+  }
+
+  .form-page__description {
+    width: 350px;
+    margin-left: 50px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

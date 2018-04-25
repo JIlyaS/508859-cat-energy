@@ -1,0 +1,14 @@
+.button {
+  min-height: 40px;
+
+  text-transform: uppercase;
+  border: none;
+
+  background-color: $components-color;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    min-height: 52px;
+  }
+}

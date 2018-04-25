@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
-    <a href="#" class="page-header__logo-link">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="195" height="38" alt="Логотип магазина Кэт Энерджи">
-    </a>
     <h1 class="visually-hidden">Cat Energy</h1>
-    <button class="main-nav__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="page-header__container">
+      <a href="#" class="page-header__logo-link">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="195" height="38" alt="Логотип магазина Кэт Энерджи">
+      </a>
+      <button class="page-header__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
     <nav class="main-nav">
       <ul class="main-nav__list nav-list">
         <li class="nav-list__item"><a class="nav-list__item-link" href="index.html">Главная</a></li>
@@ -29,15 +33,15 @@
       <fieldset class="form-program__info-block">
         <div class="form-program__element-block">
           <label class="form-program__title" for="name">Имя:<sup>*</sup></label>
-          <input class="form-program__name" id="name" type="text" name="cat-name" placeholder="БАРСИК" required>
+          <input class="form-program__name form-input" id="name" type="text" name="cat-name" placeholder="БАРСИК" required>
         </div>
         <div class="form-program__element-block">
           <label class="form-program__title" for="weight">Вес (КГ):<sup>*</sup></label>
-          <input class="form-program__weight" id="weight" type="text" name="cat-weight" placeholder="7" required>
+          <input class="form-program__weight form-input" id="weight" type="text" name="cat-weight" placeholder="7" required>
         </div>
         <div class="form-program__element-block">
           <label class="form-program__title" for="age">Возраст (лет):<sup>*</sup></label>
-          <input class="form-program__age" id="age" type="text" name="cat-age" placeholder="7">
+          <input class="form-program__age form-input" id="age" type="text" name="cat-age" placeholder="7">
         </div>
       </fieldset>
       <fieldset class="form-program__radio-block">
@@ -60,11 +64,11 @@
         <legend class="form-program__owner-title">Контактные данные (владельца кота)</legend>
           <div class="form-program__element-block">
             <label class="form-program__title" for="boss-email">E-MAIL:<sup>*</sup></label>
-            <input class="form-program__owner" id="boss-email" type="email" name="boss-email" placeholder="kuklachev@gmail.com" required>
+            <input class="form-program__email form-input" id="boss-email" type="email" name="boss-email" placeholder="kuklachev@gmail.com" required>
           </div>
           <div class="form-program__element-block">
             <label class="form-program__title" for="boss-phone">Телефон:<sup>*</sup></label>
-            <input class="form-program__owner" id="boss-phone" type="tel" name="boss-phone" placeholder="8(960)900-60-90" required>
+            <input class="form-program__phone form-input" id="boss-phone" type="tel" name="boss-phone" placeholder="8 (960) 900-60-90" required>
           </div>
       </fieldset>
       <fieldset class="form-program__comment-block">
@@ -101,9 +105,9 @@
     </form>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__address-block">
+    <div class="page-footer__address-block page-footer__address-block--color">
       <b class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</b>
-      <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 <span class="page-footer__city">Санкт-Петербург</span></address>
     </div>
     <div class="page-footer__card"></div>
     <div class="page-footer__footer-bottom">

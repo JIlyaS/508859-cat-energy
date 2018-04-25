@@ -1,3 +1,7 @@
 .site-socials__item {
+  height: 63px;
+
+  border: 1px solid black;
+
   @include reset-list();
 }

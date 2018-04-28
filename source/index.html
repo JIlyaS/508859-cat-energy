@@ -10,19 +10,21 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Cat Energy</h1>
-      <div class="page-header__container">
-        <a href="#" class="page-header__logo-link">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="195" height="38" alt="Логотип магазина Кэт Энерджи">
-        </a>
-        <button class="page-header__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="page-header__block">
+        <div class="page-header__container">
+          <a href="#" class="page-header__logo-link">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="195" height="38" alt="Логотип магазина Кэт Энерджи">
+          </a>
+          <button class="page-header__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item"><a class="nav-list__item-link">Главная</a></li>
+            <li class="nav-list__item"><a class="nav-list__item-link" href="catalog.html">Каталог продукции</a></li>
+            <li class="nav-list__item"><a class="nav-list__item-link" href="form.html">Подбор программы</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item"><a class="nav-list__item-link">Главная</a></li>
-          <li class="nav-list__item"><a class="nav-list__item-link" href="catalog.html">Каталог продукции</a></li>
-          <li class="nav-list__item"><a class="nav-list__item-link" href="form.html">Подбор программы</a></li>
-        </ul>
-      </nav>
     </header>
     <main class="page-main">
       <section class="main-header">
@@ -37,7 +39,7 @@
       </section>
       <section class="main-descrition">
         <h2 class="visually-hidden">Программы</h2>
-        <ul class="main-descrition__list">
+        <ul class="main-description__list">
           <li class="main-descrition__item program">
             <h2 class="program__title">Похудение</h2>
             <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -62,29 +64,33 @@
       <section class="main-example">
         <div class="main-example__container">
           <div class="main-example__block">
-            <h2 class="main-example__title">Живой пример</h2>
-            <p class="main-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="main-example__results-block">
-              <div class="main-example__results">
-                <b class="main-example__result">5 КГ</b>
-                <span class="main-example__result-description">снижение веса</span>
+            <div class="main-example__example-block">
+              <h2 class="main-example__title">Живой пример</h2>
+              <p class="main-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="main-example__results-block">
+                <div class="main-example__results">
+                  <b class="main-example__result">5 КГ</b>
+                  <span class="main-example__result-description">снижение веса</span>
+                </div>
+                <div class="main-example__results">
+                  <b class="main-example__result">60 ДНЕЙ</b>
+                  <span class="main-example__result-description">затрачено времени</span>
+                </div>
               </div>
-              <div class="main-example__results">
-                <b class="main-example__result">60 ДНЕЙ</b>
-                <span class="main-example__result-description">затрачено времени</span>
+              <b class="main-example__cost">Затраты на питание: <span class="main-example__value">15 000 руб.</span></b>
+            </div>
+            <div class="main-example__result-block">
+              <img class="main-example__image main-example__image--current" src="img/before-mobile@1x.png" width="320" height="240" alt="Жирный кот">
+              <div class="main-example__range">
+                <button class="main-example__range-start" type="button">Было</button>
+                <span class="main-example__range-element"></span>
+                <button class="main-example__range-end" type="button">Стало</button>
               </div>
             </div>
-            <b class="main-example__cost">Затраты на питание: 15 000 руб.</b>
-            <img class="main-example__image main-example__image--current" src="img/before-mobile@1x.png" width="320" height="240" alt="Жирный кот">
-          </div>
-          <div class="main-example__range">
-            <button class="main-example__range-start" type="button">Было</button>
-            <span class="main-example__range-element"></span>
-            <button class="main-example__range-end" type="button">Стало</button>
           </div>
         </div>
       </section>
-  </main>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__address-block">
         <b class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</b>
@@ -92,7 +98,9 @@
       </div>
       <div class="page-footer__card"></div>
       <div class="page-footer__footer-bottom">
-        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
+        <div class="page-footer__logo-img">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
+        </div>
         <ul class="page-footer__socials site-socials">
           <li class="site-socials__item">
             <a class="site-socials__link site-socials__link--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>

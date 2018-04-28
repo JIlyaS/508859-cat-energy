@@ -20,6 +20,7 @@
 
 body {
   // width: 100%;
+  width: 320px;
   margin: 0 auto;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -56,4 +57,16 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1440px;
+  }
 }

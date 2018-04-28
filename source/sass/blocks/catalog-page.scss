@@ -7,3 +7,9 @@
     border-top: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-page {
+    margin-bottom: 10px;
+  }
+}

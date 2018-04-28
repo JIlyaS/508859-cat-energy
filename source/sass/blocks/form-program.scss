@@ -115,7 +115,7 @@
   padding-top: 10px;
 
   text-align: center;
-  border: none;
+
   border: 1px solid $add-components-color;
 
   resize: none;
@@ -129,7 +129,6 @@
 .form-program__checkbox-title {
   margin-bottom: 39px;
   padding: 0 20px;
-
 
   font-size: 24px;
   line-height: 24px;
@@ -180,7 +179,7 @@
   }
 
   .form-program__info-block {
-    margin-top: 70px;
+    margin-top: 65px;
     margin-bottom: 60px;
 
     box-sizing: border-box;
@@ -206,6 +205,7 @@
   .form-program__radio-block {
     min-height: 165px;
     margin: 0 70px;
+    margin-top: -20px;
     padding-left: 87px;
     padding-top: 28px;
     margin-bottom: 70px;
@@ -238,6 +238,7 @@
 
   .form-program__email {
     width: 553px;
+    margin-top: 16px;
   }
 
   .form-program__phone {
@@ -295,12 +296,13 @@
   .form-program__submit-block {
     margin-top: 40px;
     margin-left: -162px;
-
   }
 
   .form-program__submit {
     font-size: 20px;
     line-height: 20px;
+
+    min-height: 53px;
   }
 
   .form-program__note {
@@ -310,6 +312,134 @@
 
     font-size: 16px;
     line-height: 16px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .form-program__block {
+    display: flex;
+
+    padding: 0 110px;
+    margin-top: 30px;
+    margin-bottom: 4px;
+    padding-top: 12px;
+  }
+
+  .form-program__info-block {
+    flex-shrink: 0;
+
+    margin: 0;
+    padding: 0;
+    width: 570px;
+  }
+
+  .form-program__title {
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-program__element-block {
+
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 18px;
+  }
+
+  .form-program__name {
+    width: 509px;
+  }
+
+  .form-program__weight {
+    width: 479px;
+  }
+
+  .form-program__age {
+    width: 437px;
+  }
+
+  .form-program__radio-block {
+    flex-shrink: 0;
+
+    width: 570px;
+    margin-top: 0;
+
+    box-sizing: border-box;
+  }
+
+  .form-program__owner-block {
+    margin-bottom: 36px;
+  }
+
+  .form-program__owner-title {
+    padding-left: 110px;
+  }
+
+  .form-program__owner-element {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 110px;
+  }
+
+  .form-program__owner-block .form-program__element-block {
+    margin-top: 18px;
+  }
+
+  .form-program__email {
+    width: 487px;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .form-program__phone {
+    width: 473px;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .form-program__comment-block {
+    padding: 0 110px;
+  }
+
+  .form-program__comment-title {
+    margin-top: -5px;
+  }
+
+  .form-program__checkbox-block {
+    padding: 0 110px;
+  }
+
+  .form-program__checkbox-item .form-program__title {
+    top: 2px;
+    left: 5px;
+  }
+
+  .form-program__checkbox-item:nth-child(2) .form-program__title {
+    margin-left: 14px;
+  }
+
+  .form-program__checkbox-item:nth-child(3) .form-program__title {
+    margin-left: 26px;
+  }
+
+  .form-program__checkbox-item:nth-child(4) .form-program__title {
+    margin-left: 40px;
+  }
+
+  .form-program__submit-block {
+    padding: 0 110px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .form-program__submit {
+    width: 570px;
+    height: 53px;
+    margin-top: 30px;
+  }
+
+  .form-program__note {
+    left: 77px;
   }
 }

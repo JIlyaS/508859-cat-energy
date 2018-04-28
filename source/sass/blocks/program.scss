@@ -4,6 +4,8 @@
   padding-top: 1px;
 
   background-color: $add-back-color;
+
+  box-sizing: border-box;
 }
 
 .program__title {
@@ -47,7 +49,6 @@
 
   .program:nth-of-type(2) {
     padding-right: 310px;
-
   }
 
   .program__title {
@@ -72,5 +73,26 @@
 
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 570px;
+    min-height: 373px;
+    padding-right: 30px;
+  }
+
+  .program:nth-of-type(2) {
+    padding-right: 50px;
+  }
+
+  .program__title {
+    padding-left: 194px;
+  }
+
+  .program__description {
+    margin-top: 73px;
+    margin-bottom: 31px;
   }
 }

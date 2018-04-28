@@ -22,6 +22,9 @@
 }
 
 .page-footer__socials {
+  display: flex;
+  flex-direction: row;
+
   padding: 0 20px;
 }
 
@@ -58,11 +61,6 @@
   padding: 0 20px;
 }
 
-.page-footer__socials {
-  display: flex;
-  flex-direction: row;
-}
-
 .page-footer__logo-block {
   display: flex;
   justify-content: space-between;
@@ -70,7 +68,8 @@
 
   width: 100%;
   min-height: 78px;
-  padding-top: 15px;
+  margin-top: -20px;
+  // padding-top: 15px;
 }
 
 .page-footer__htmlacademy-link {
@@ -81,13 +80,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    position: relative;
+    padding-top: 1px;
+  }
+
   .page-footer__address-block {
     justify-content: space-between;
-    min-height: 200px;
+
+    height: 200px;
     padding: 0 71px;
+
+    box-sizing: border-box;
   }
 
   .page-footer__invitation {
+
     width: 150px;
 
     font-size: 20px;
@@ -122,3 +130,65 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__address-block {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    min-width: 570px;
+    padding-left: 75px;
+    padding-top: 0;
+    margin-top: 20px;
+
+    box-sizing: border-box;
+
+    background-color: $main-back-color;
+  }
+
+  .page-footer__address {
+    text-align: left;
+  }
+
+  .page-footer__card {
+    height: 400px;
+  }
+
+  .page-footer__footer-bottom {
+    justify-content: space-between;
+
+    padding: 0 110px;
+  }
+
+  .page-footer__socials {
+    width: 570px;
+    border: 1px solid black;
+  }
+
+  .page-footer__logo-img {
+    width: 245px;
+  }
+
+  .page-footer__logo-image {
+    margin-top: 15px;
+  }
+
+  .page-footer__logo-block {
+    display: flex;
+    justify-content: center;
+
+    width: 245px;
+    margin-top: -20px; //?
+    padding-left: 80px; //?
+
+    box-sizing: border-box;
+  }
+
+  .page-footer__htmlacademy-imglink {
+    margin-left: 20px;
+  }
+}

@@ -6,9 +6,3 @@
 
   background-color: $components-color;
 }
-
-@media (min-width: $tablet-width) {
-  .button {
-    min-height: 52px;
-  }
-}

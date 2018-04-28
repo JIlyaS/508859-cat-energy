@@ -3,7 +3,7 @@
   margin-bottom: -15px;
 }
 
-.main-descrition__list {
+.main-description__list {
   @include reset-list();
 }
 
@@ -18,5 +18,22 @@
 
   .main-descrition__item {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-descrition {
+    padding: 0 110px;
+  }
+
+  .main-description__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-descrition__item {
+    padding: 0 0;
   }
 }

@@ -28,6 +28,10 @@
   margin-bottom: 15px;
 }
 
+.form-program__title-sweet,
+.form-program__title-water,
+.form-program__title-milk,
+.form-program__title-vitamin,
 .form-program__title {
   font-size: 16px;
   line-height: 18px;
@@ -49,10 +53,7 @@
 
 .form-program__radio-block {
   min-height: 156px;
-
-  padding-top: 20px;
-  padding-left: 65px;
-  padding-right: 20px;
+  padding: 20px 20px 0 65px;
 
   border-top: 1px solid $add-components-color;
   border-bottom: 1px solid $add-components-color;
@@ -71,7 +72,7 @@
   min-height: 42px;
   padding: 20px 0;
 
-  @include reset-list();
+  @include reset-list(); //?
 }
 
 .form-program__owner-block {
@@ -79,9 +80,7 @@
 }
 
 .form-program__owner-title {
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 5px 20px 0;
 
   font-size: 24px;
   line-height: 24px;
@@ -97,7 +96,7 @@
 }
 
 .form-program__comment-block {
-  margin: -15px 0 27px 0;
+  margin: -15px 0 27px;
   padding: 0 20px;
 }
 
@@ -158,7 +157,6 @@
   width: 280px;
   margin-bottom: 15px;
 
-
   font-size: 16px;
   line-height: 20px;
   color: $add-font-color;
@@ -185,6 +183,10 @@
     box-sizing: border-box;
   }
 
+  .form-program__title-sweet,
+  .form-program__title-water,
+  .form-program__title-milk,
+  .form-program__title-vitamin,
   .form-program__title {
     font-size: 20px;
     line-height: 20px;
@@ -204,11 +206,9 @@
 
   .form-program__radio-block {
     min-height: 165px;
-    margin: 0 70px;
-    margin-top: -20px;
     padding-left: 87px;
     padding-top: 28px;
-    margin-bottom: 70px;
+    margin: -20px 70px 70px;
 
     border: 1px solid $add-components-color;
   }
@@ -232,8 +232,7 @@
   }
 
   .form-program__element-block {
-    margin: 0 50px;
-    margin-bottom: 20px;
+    margin: 0 50px 20px;
   }
 
   .form-program__email {
@@ -271,7 +270,7 @@
   }
 
   .form-program__checkbox-title {
-    padding: 0 0;
+    padding: 0;
 
     font-size: 36px;
     line-height: 36px;
@@ -319,10 +318,10 @@
   .form-program__block {
     display: flex;
 
-    padding: 0 110px;
+    padding: 12px 110px 0;
     margin-top: 30px;
     margin-bottom: 4px;
-    padding-top: 12px;
+    // padding-top: 12px;
   }
 
   .form-program__info-block {
@@ -339,7 +338,6 @@
   }
 
   .form-program__element-block {
-
     margin: 0;
     padding: 0;
 
@@ -410,20 +408,23 @@
     padding: 0 110px;
   }
 
-  .form-program__checkbox-item .form-program__title {
+  .form-program__title-sweet,
+  .form-program__title-water,
+  .form-program__title-milk,
+  .form-program__title-vitamin {
     top: 2px;
     left: 5px;
   }
 
-  .form-program__checkbox-item:nth-child(2) .form-program__title {
+  .form-program__title-water {
     margin-left: 14px;
   }
 
-  .form-program__checkbox-item:nth-child(3) .form-program__title {
+  .form-program__title-milk {
     margin-left: 26px;
   }
 
-  .form-program__checkbox-item:nth-child(4) .form-program__title {
+  .form-program__title-vitamin {
     margin-left: 40px;
   }
 

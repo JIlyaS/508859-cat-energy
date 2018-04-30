@@ -4,8 +4,7 @@
 
   height: 290px;
   width: 280px;
-  margin: 0 20px;
-  margin-bottom: 30px;
+  margin: 0 20px 30px;
 
   text-align: center;
 
@@ -32,18 +31,12 @@
     width: 708px;
 
     height: 200px;
-    margin: 0 30px;
-    margin-bottom: 72px;
+    margin: 0 30px 72px;
   }
 
   .gifts__description {
-    // position: relative;
-    // top: 72px;
-    // left: 364px;
     position: static;
-    padding-left: 423px;
-    padding-top: 72px;
-    padding-right: 100px;
+    padding: 72px 100px 0 423px;
 
     text-align: left;
   }
@@ -53,9 +46,7 @@
   .gifts {
     width: 245px;
     height: 288px;
-    margin-top: 160px;
-    margin-left: 0;
-    margin-right: 110px;
+    margin: 160 110px 0 0;
 
     box-sizing: border-box;
   }

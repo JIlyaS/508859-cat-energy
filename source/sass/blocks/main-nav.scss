@@ -1,3 +1,26 @@
-.main-nav__list {
-  margin: 0 20px;
+.main-nav {
+  display: none;
+
+  min-height: 200px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: flex-end;
+
+    min-width: 516px;
+    min-height: 100px;
+    padding-right: 30px; //?
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+
+    min-height: 180px; //?
+  }
 }

@@ -1,5 +1,6 @@
 .main-advantages {
-  margin: 0 20px 22px 20px;
+  padding: 0 20px;
+  margin-bottom: 40px;
 }
 
 .main-advantages__title {
@@ -10,4 +11,28 @@
 
 .main-advantages__list {
   margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-advantages {
+    padding: 0 30px;
+    margin-bottom: -32px;
+  }
+
+  .main-advantages__title {
+    padding-top: 12px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-advantages {
+    padding: 0 110px;
+  }
+
+  .main-advantages__title {
+    padding-top: 9px;
+  }
 }

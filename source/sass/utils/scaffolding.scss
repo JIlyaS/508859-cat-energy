@@ -19,6 +19,8 @@
 }
 
 body {
+  // width: 100%;
+  width: 320px;
   margin: 0 auto;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -32,6 +34,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -52,9 +59,14 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.button {
-  text-transform: uppercase;
-  border: none;
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
 
-  background-color: $components-color;
+@media (min-width: $desktop-width) {
+  body {
+    width: 1440px;
+  }
 }

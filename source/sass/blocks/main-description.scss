@@ -1,9 +1,39 @@
 .main-descrition {
   padding: 0 20px;
+  margin-bottom: -15px;
+}
+
+.main-description__list {
+  @include reset-list();
 }
 
 .main-descrition__item {
   margin-bottom: 20px;
+}
 
-  @include reset-list();
+@media (min-width: $tablet-width) {
+  .main-descrition {
+    padding: 0 30px;
+  }
+
+  .main-descrition__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-descrition {
+    padding: 0 110px;
+  }
+
+  .main-description__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-descrition__item {
+    padding: 0 0;
+  }
 }

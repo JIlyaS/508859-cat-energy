@@ -4,7 +4,8 @@
 
   height: 290px;
   width: 280px;
-  margin: 0 20px 30px;
+  // margin: 0 20px;
+  margin-bottom: 30px;
 
   text-align: center;
 
@@ -31,7 +32,8 @@
     width: 708px;
 
     height: 200px;
-    margin: 0 30px 72px;
+    // margin: 0 30px;
+    margin-bottom: 72px;
   }
 
   .gifts__description {
@@ -46,7 +48,8 @@
   .gifts {
     width: 245px;
     height: 288px;
-    margin: 160 110px 0 0;
+    margin-top: 160px;
+    margin-right: 110px;
 
     box-sizing: border-box;
   }

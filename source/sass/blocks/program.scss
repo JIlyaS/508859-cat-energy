@@ -9,7 +9,7 @@
 }
 
 .program__title {
-  margin-top: 30px;
+  margin-top: 28px;
   padding-left: 72px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -20,13 +20,19 @@
 }
 
 .program__description {
-  margin-top: 27px;
-  margin-bottom: 40px;
+  margin-top: 29px;
+  margin-bottom: 22px;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $paragraph-font-color;
+}
+
+.program__link-block {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 2px solid #e6e6e6;
 }
 
 .program__link {
@@ -38,6 +44,10 @@
   color: $main-font-color;
   text-transform: uppercase;
   vertical-align: top;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -61,11 +71,18 @@
 
   .program__description {
     padding-left: 33px;
+    padding-right: 5px;
     margin-top: -7px;
     margin-bottom: 57px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .program__link-block {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
   }
 
   .program__link {

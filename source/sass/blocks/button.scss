@@ -5,4 +5,15 @@
   border: none;
 
   background-color: $components-color;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

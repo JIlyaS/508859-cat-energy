@@ -9,7 +9,7 @@
 }
 
 .main-example__title {
-  padding-top: 15px;
+  padding-top: 17px;
   margin-bottom: 25px;
 
   font-size: 36px;
@@ -18,7 +18,8 @@
 }
 
 .main-example__description {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
+  padding-right: 2px;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -32,11 +33,14 @@
 }
 
 .main-example__results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 123px;
   height: 55px;
   margin-bottom: 32px;
 
-  border: 1px solid black;
+  border: 1px solid #cfcfcf;
 }
 
 .main-example__result {
@@ -49,11 +53,19 @@
 }
 
 .main-example__result-description {
+  display: inline-block;
+
+  background-color: $add-back-color;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 25px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: $paragraph-font-color;
   text-transform: lowercase;
+
+  border-radius: 2px;
 }
 
 .main-example__cost {
@@ -81,9 +93,28 @@
   position: relative;
   top: 4px;
 
-  height: 10px;
+  height: 12px;
   width: 80px;
-  border: 1px solid black;
+
+  background-color: #ffffff;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+
+  &::before {
+    content: " ";
+
+    position: absolute;
+    top: 3px;
+    left: 5px;
+
+    height: 6px;
+    width: 35px;
+
+    background-color: #68b738;
+
+    border-radius: 8px;
+  }
 }
 
 .main-example__range-start,
@@ -100,11 +131,12 @@
 
 @media (min-width: $tablet-width) {
   .main-example {
-    margin-bottom: -60px;
+    margin-bottom: -64px;
 
     padding-bottom: 53px;
 
     background-color: transparent;
+    // background: linear-gradient(to bottom, $main-back-color 26%, $add-back-color 26%);
 
     border-top: 1px solid #e6e6e6;
   }
@@ -130,6 +162,8 @@
   }
 
   .main-example__description {
+    padding-right: 10px;
+
     font-size: 16px;
     line-height: 24px;
   }
@@ -137,7 +171,7 @@
   .main-example__results-block {
     justify-content: flex-start;
 
-    padding-top: 25px;
+    padding-top: 29px;
 
     text-align: center;
   }
@@ -164,13 +198,25 @@
   }
 
   .main-example__result-description {
+    display: inline-block;
+
+    margin: 0 -10px;
+    padding: 0 5px;
+
+    font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 14px;
+    color: $paragraph-font-color;
+    text-transform: lowercase;
+    text-align: center;
+
+    background-color: $main-back-color;
   }
+
 
   .main-example__cost {
     position: relative;
-    top: -93px;
+    top: -95px;
     left: 510px;
 
     display: block;
@@ -203,7 +249,7 @@
     height: 462px;
     margin: 0;
 
-    background-color: #f2f2f2;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
   .main-example__range-start {
@@ -217,9 +263,43 @@
   }
 
   .main-example__range-element {
-    top: 375px;
-    height: 3px;
-    width: 450px;
+    top: 373px;
+    height: 6px;
+    width: 428px;
+    padding: 0 12px;
+
+    background-color: #dcdcdc;
+
+    border: none;
+
+    &::before {
+      top: -14px;
+      left: 210px;
+      width: 31px;
+      height: 31px;
+
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+
+      background-color: #ffffff;
+
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &::after {
+      content: " ";
+
+      position: absolute;
+      top: -1px;
+      left: 222px;
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background-color: $components-color;
+    }
   }
 
   .main-example__range-end {
@@ -229,6 +309,8 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    background: transparent;
   }
 }
 
@@ -271,6 +353,19 @@
     margin-bottom: 20px;
   }
 
+  .main-example__results {
+    border: 2px solid #e6e6e6;
+
+    border-radius: 2px;
+  }
+
+  .main-example__result-description {
+    margin: 0 -10px;
+    padding: 0 5px;
+
+    background-color: $add-back-color;
+  }
+
 
   .main-example__results-block {
     width: 435px;
@@ -300,25 +395,33 @@
     padding-top: 0;
     min-height: 463px;
 
-    background-color: transparent;
+    background: transparent;
   }
 
   .main-example__range-start {
-    margin-top: -56px;
+    margin-top: -53px;
     margin-left: -230px;
 
     background-color: transparent;
   }
 
   .main-example__range-element {
-    top: -47px;
+    top: -43px;
 
-    width: 420px;
+    width: 400px;
     margin: 0 17px;
+
+    &::before {
+      left: 196px;
+    }
+
+    &::after {
+      left: 208px;
+    }
   }
 
   .main-example__range-end {
-    margin-top: -56px;
+    margin-top: -53px;
     margin-right: -10px;
 
     background-color: transparent;

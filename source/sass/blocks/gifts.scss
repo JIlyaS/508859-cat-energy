@@ -4,7 +4,7 @@
 
   height: 290px;
   width: 280px;
-  margin: 0 20px 30px;
+  margin-bottom: 30px;
 
   text-align: center;
 
@@ -24,6 +24,22 @@
   font-size: 16px;
   line-height: 20px;
   color: $add-font-color;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -120px;
+    left: 113px;
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 55px 60px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -31,7 +47,7 @@
     width: 708px;
 
     height: 200px;
-    margin: 0 30px 72px;
+    margin-bottom: 72px;
   }
 
   .gifts__description {
@@ -39,6 +55,14 @@
     padding: 72px 100px 0 423px;
 
     text-align: left;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 65px;
+      left: 90px;
+    }
   }
 }
 
@@ -46,7 +70,7 @@
   .gifts {
     width: 245px;
     height: 288px;
-    margin: 160 110px 0 0;
+    margin: 162px 110px 0 0;
 
     box-sizing: border-box;
   }
@@ -56,5 +80,10 @@
     padding: 0 30px;
 
     text-align: center;
+
+    &::before {
+      top: 66px;
+      left: 95px;
+    }
   }
 }

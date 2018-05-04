@@ -5,13 +5,17 @@
   width: 100%;
 }
 
+.main-nav__nav--show {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
     justify-content: flex-end;
 
     min-width: 516px;
-    min-height: 100px;
+    min-height: 110px;
     padding-right: 30px; //?
   }
 }
@@ -22,5 +26,6 @@
     align-items: center;
 
     min-height: 180px; //?
+    padding: 0;
   }
 }

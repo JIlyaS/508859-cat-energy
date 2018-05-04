@@ -1,7 +1,27 @@
-.site-socials__item {
+.site-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 63px;
 
-  border: 1px solid black;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 
   @include reset-list();
+}
+
+.site-socials__item {
+  padding: 0 18px;
+  height: 20px;
+}
+
+.site-socials__link {
+  vertical-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .site-socials {
+    border: none;
+  }
 }

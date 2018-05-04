@@ -1,5 +1,5 @@
 .main-header {
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 }
 
 .main-header__block {
@@ -16,6 +16,9 @@
 }
 
 .main-header__title {
+  margin-top: 26px;
+  margin-bottom: 20px;
+
   font-size: 36px;
   line-height: 36px;
   color: $add-font-color;
@@ -41,10 +44,10 @@
 
 .main-header__button {
   position: relative;
-  top: 135px;
+  top: 133px;
 
   display: inline-block;
-  width: 280px;
+  width: 280px; // 100%
 
   font-size: 14px;
   line-height: 40px;
@@ -68,7 +71,7 @@
 
   .main-header__title {
     z-index: 1;
-    margin-top: 35px;
+    margin-top: 30px;
     margin-left: 15px;
 
     font-size: 60px;
@@ -78,10 +81,9 @@
 
   .main-header__desc {
     position: relative;
-    top: -10px;
+    top: 20px;
     z-index: 1;
     margin-left: 20px;
-
 
     font-size: 20px;
     line-height: 20px;
@@ -95,9 +97,9 @@
 
   .main-header__button {
     position: relative;
-    top: -43px;
-    left: -148px;
-    z-index: 1;
+    top: -47px;
+    left: -143px;
+    z-index: 2;
 
     width: 245px;
     min-height: 53px;

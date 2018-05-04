@@ -1,6 +1,6 @@
 .main-descrition {
   padding: 0 20px;
-  margin-bottom: -15px;
+  margin-bottom: -13px;
 }
 
 .main-description__list {
@@ -24,6 +24,7 @@
 @media (min-width: $desktop-width) {
   .main-descrition {
     padding: 0 110px;
+    margin-bottom: -16px;
   }
 
   .main-description__list {
@@ -34,6 +35,6 @@
   }
 
   .main-descrition__item {
-    padding: 0 0;
+    padding: 0;
   }
 }

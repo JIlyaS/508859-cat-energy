@@ -83,11 +83,25 @@
   &:hover ~ .form-program__control-radio,
   &:focus ~ .form-program__control-radio {
     border-color: #bcbcbc;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:active ~ .form-program__control-radio {
+    border: 2px solid $components-color;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+
+    box-sizing: border-box;
   }
 
   &:disabled ~ .form-program__control-radio {
     border-color: rgba(206, 206, 206, 0.3);
   }
+
+  &:disabled ~ .form-program__radio-content {
+    color: rgba(34, 34, 34, 0.3)
+  }
+
+
 
   &:checked ~ .form-program__control-radio::before {
     content: "";
@@ -260,6 +274,15 @@
 
   resize: none;
   box-sizing: border-box;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-width: 2px;
+    border-color: #444444;
+  }
 }
 
 .form-program__checkbox-block {
@@ -309,10 +332,22 @@
   &:hover ~ .form-program__control-checkbox,
   &:focus ~ .form-program__control-checkbox {
     border-color: #bcbcbc;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:active ~ .form-program__control-checkbox {
+    border: 2px solid $components-color;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+
+    box-sizing: border-box;
   }
 
   &:disabled ~ .form-program__control-checkbox {
     border-color: rgba(206, 206, 206, 0.3);
+  }
+
+  &:disabled ~ .form-program__checkbox-content {
+    color: rgba(34, 34, 34, 0.3);
   }
 
   &:checked ~ .form-program__control-checkbox::before {

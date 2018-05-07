@@ -6,6 +6,27 @@
   border: 1px solid $add-components-color;
 
   box-sizing: border-box;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-width: 2px;
+    border-color: #444444;
+  }
+}
+
+.form-input--error {
+  border-width: 2px;
+  border-color: #ff8282;
 }
 
 @media (min-width: $tablet-width) {

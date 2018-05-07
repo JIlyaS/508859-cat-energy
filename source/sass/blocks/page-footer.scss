@@ -5,20 +5,22 @@
 .page-footer__address-block {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 
   min-height: 115px;
   padding: 0 20px;
+  // border: 1px solid black;
 
   background-color: $main-back-color;
 }
 
 .page-footer__address-block--color {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .page-footer__logo-image {
   margin-top: 38px;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .page-footer__socials {
@@ -31,6 +33,11 @@
 }
 
 .page-footer__invitation {
+  display: block;
+  vertical-align: center;
+
+  width: 140px;
+
   font-size: 16px;
   line-height: 20px;
   color: $main-font-color;
@@ -38,21 +45,42 @@
 }
 
 .page-footer__address {
+  display: block;
+  vertical-align: center;
+
+  width: 140px;
+
   font-family: "Arial", sans-serif;
   font-style: normal;
-
   font-size: 14px;
   line-height: 20px;
   color: $paragraph-font-color;
 }
 
-.page-footer__card {
+.page-footer__map {
+  position: relative;
   width: 100%;
   height: 362px;
 
   background-color: #fdf7ef;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 177px;
+    left: 127px;
+
+    width: 62px;
+    height: 53px;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 62px 53px;
+  }
 }
 
 .page-footer__footer-bottom {
@@ -96,7 +124,7 @@
   }
 
   .page-footer__invitation {
-    width: 150px;
+    width: 200px;
 
     font-size: 20px;
     line-height: 25px;
@@ -115,7 +143,7 @@
     line-height: 59px;
   }
 
-  .page-footer__card {
+  .page-footer__map {
     min-height: 398px;
   }
 
@@ -136,9 +164,9 @@
   }
 
   .page-footer__logo-image {
-    margin-top: 55px;
-    // margin-left: -20px;
-    margin-right: 20px;
+    margin-top: 26px;
+    margin-left: -20px;
+    margin-right: 0;
   }
 
   .page-footer__socials {
@@ -161,6 +189,7 @@
     position: absolute;
     top: 80px;
     left: 110px;
+    z-index: 1;
 
     min-width: 570px;
     padding-left: 75px;
@@ -176,7 +205,7 @@
     text-align: left;
   }
 
-  .page-footer__card {
+  .page-footer__map {
     height: 400px;
   }
 
@@ -203,7 +232,7 @@
   }
 
   .page-footer__logo-image {
-    margin-top: 17px;
+    margin-top: 9px;
     margin-left: -20px;
   }
 

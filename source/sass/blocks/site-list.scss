@@ -10,6 +10,8 @@
 }
 
 .site-list__item {
+  position: relative;
+
   display: inline-block;
   width: 280px;
   min-height: 60px;
@@ -20,6 +22,138 @@
   line-height: 18px;
   color: $paragraph-font-color;
   box-sizing: border-box;
+}
+
+.site-list__item:first-child::before {
+  content: "";
+
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  z-index: 1;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 50px 50px;
+}
+
+.site-list__item:first-child::after {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  top: -2px;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $components-color;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 60px 60px;
+}
+
+.site-list__item:nth-child(2)::before {
+  content: "";
+
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  z-index: 1;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 50px 50px;
+}
+
+.site-list__item:nth-child(2)::after {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  top: -2px;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $components-color;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 60px 60px;
+}
+
+.site-list__item:nth-child(3)::before {
+  content: "";
+
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  z-index: 1;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 50px 50px;
+}
+
+.site-list__item:nth-child(3)::after {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  top: -2px;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $components-color;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 60px 60px;
+}
+
+.site-list__item:nth-child(4)::before {
+  content: "";
+
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  z-index: 1;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 50px 50px;
+}
+
+.site-list__item:nth-child(4)::after {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  top: -2px;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $components-color;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 60px 60px;
 }
 
 @media (min-width: $tablet-width) {

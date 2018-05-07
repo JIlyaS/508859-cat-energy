@@ -1,5 +1,6 @@
 .main-descrition {
   padding: 0 20px;
+  padding-top: 5px;
   margin-bottom: -13px;
 }
 
@@ -13,6 +14,7 @@
 
 @media (min-width: $tablet-width) {
   .main-descrition {
+    padding-top: 0;
     padding: 0 30px;
   }
 

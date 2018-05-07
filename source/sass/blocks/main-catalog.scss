@@ -91,6 +91,17 @@
   border-top: 1px solid $add-components-color;
 }
 
+.main-catalog__viewall-button--color {
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(126, 126, 126, 0.3);
+  }
+}
+
 .main-catalog__viewall-title {
   position: relative;
 
@@ -211,8 +222,12 @@
     text-align: center;
   }
 
+  .main-catalog__product-link {
+  }
+
   .main-catalog__product-image {
     position: relative;
+    left: 0;
     top: -55px;
   }
 

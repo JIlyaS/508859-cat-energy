@@ -1,12 +1,22 @@
 .main-nav {
-  display: none;
+  display: block;
 
   min-height: 200px;
   width: 100%;
 }
 
-.main-nav__nav--show {
-  display: block;
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--opened {
+    display: block;
+  }
+
+  .main-nav--nojs {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {

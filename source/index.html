@@ -8,20 +8,22 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--position">
       <h1 class="visually-hidden">Cat Energy</h1>
       <div class="page-header__block">
         <div class="page-header__container">
-          <a href="#" class="page-header__logo-link">
+          <a href="#" class="page-header__logo-link page-header--nojs">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="195" height="38" alt="Логотип магазина Кэт Энерджи">
           </a>
-          <button class="page-header__burger" type="button"><span class="visually-hidden">Открыть меню</span><span class="page-header__burger-line"></span></button>
+          <div class="page-header__burger-block page-header--nojs">
+            <button class="page-header__burger page-header__burger--closed" type="button"><span class="visually-hidden">Открыть меню</span><span class="page-header__burger-line"></span></button>
+          </div>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list nav-list">
-            <li class="nav-list__item"><a class="nav-list__item-link nav-list__item-link--active">Главная</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link" href="catalog.html">Каталог продукции</a></li>
-            <li class="nav-list__item"><a class="nav-list__item-link" href="form.html">Подбор программы</a></li>
+            <li class="nav-list__item"><a class="nav-list__item-link nav-list__item-link--color nav-list__item-link--active">Главная</a></li>
+            <li class="nav-list__item"><a class="nav-list__item-link nav-list__item-link--color" href="catalog.html">Каталог продукции</a></li>
+            <li class="nav-list__item"><a class="nav-list__item-link nav-list__item-link--color" href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
@@ -41,17 +43,21 @@
         <h2 class="visually-hidden">Программы</h2>
         <ul class="main-description__list">
           <li class="main-descrition__item program">
-            <h2 class="program__title">Похудение</h2>
-            <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <div class="program__link-block">
-              <a class="program__link" href="form.html" >Каталог Slim</a>
+            <div class="program__losing">
+              <h2 class="program__title">Похудение</h2>
+              <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <div class="program__link-block">
+                <a class="program__link" href="form.html" >Каталог Slim</a>
+              </div>
             </div>
           </li>
           <li class="main-description__item program">
-            <h2 class="program__title">Набор массы</h2>
-            <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <div class="program__link-block">
-              <a class="program__link" href="form.html">Каталог Pro</a>
+            <div class="program__mass">
+              <h2 class="program__title">Набор массы</h2>
+              <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <div class="program__link-block">
+                <a class="program__link" href="form.html">Каталог Pro</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -86,9 +92,9 @@
             <div class="main-example__result-block">
               <img class="main-example__image main-example__image--current" src="img/before-mobile@1x.png" width="320" height="240" alt="Жирный кот">
               <div class="main-example__range">
-                <button class="main-example__range-start" type="button">Было</button>
+                <button class="main-example__range-start" type="button"><span class="main-example__range-start-span">Было</span></button>
                 <span class="main-example__range-element"></span>
-                <button class="main-example__range-end" type="button">Стало</button>
+                <button class="main-example__range-end" type="button"><span class="main-example__range-end-span">Стало</span></button>
               </div>
             </div>
           </div>
@@ -96,15 +102,13 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__address-block">
-        <b class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</b>
+      <div class="page-footer__address-block page-footer__address-block--color">
+        <b class="page-footer__invitation">Приглашаем<br> к сотрудничеству дилеров!</b>
         <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 <span class="page-footer__city">Санкт-Петербург</span></address>
       </div>
-      <div class="page-footer__card"></div>
+      <div class="page-footer__map"></div>
       <div class="page-footer__footer-bottom">
-        <div class="page-footer__logo-img">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
-        </div>
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
         <ul class="page-footer__socials site-socials">
           <li class="site-socials__item">
             <a class="site-socials__link site-socials__link--vk" href="#">

@@ -29,10 +29,12 @@
   }
 }
 
-.page-header__burger {
-  position: relative;
-  top: -5px;
+.page-header__burger-block {
+  display: flex;
+  align-items: flex-start;
+}
 
+.page-header__burger {
   width: 24px;
   height: 18px;
   padding: 0;

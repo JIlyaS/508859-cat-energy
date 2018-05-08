@@ -15,31 +15,40 @@
 
 .gifts__description {
   position: relative;
-  top: 185px;
+  top: 58px;
 
   display: block;
-  padding: 0 60px;
+  padding: 0 50px;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $add-font-color;
 
-  &::before {
-    content: "";
+  white-space: pre-line;
 
-    position: absolute;
-    top: -120px;
-    left: 113px;
 
-    width: 55px;
-    height: 60px;
+  // &::before {
+  //   content: "";
 
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 55px 60px;
-  }
+  //   position: absolute;
+  //   top: -120px;
+  //   left: 113px;
+
+  //   width: 55px;
+  //   height: 60px;
+
+  //   background-image: url("../img/icon-gift.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  //   background-size: 55px 60px;
+  // }
+}
+
+.additional-catalog__gift-image {
+  position: relative;
+  margin-top: 66px;
+  fill: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,7 +61,13 @@
 
   .gifts__description {
     position: static;
-    padding: 72px 100px 0 423px;
+    width: 180px;
+    height: 127px;
+    margin-left: 270px;
+    padding: 72px 0 0 0;
+
+    display: inline-block;
+    vertical-align: top;
 
     text-align: left;
 
@@ -63,6 +78,10 @@
       top: 65px;
       left: 90px;
     }
+  }
+
+  .additional-catalog__gift-image {
+    margin-left: -15px; //?
   }
 }
 
@@ -76,7 +95,9 @@
   }
 
   .gifts__description {
-    margin-top: 188px;
+    display: block;
+    margin: 0;
+    margin-top: 56px;
     padding: 0 30px;
 
     text-align: center;
@@ -85,5 +106,9 @@
       top: 66px;
       left: 95px;
     }
+  }
+
+  .additional-catalog__gift-image {
+    margin-left: 0;
   }
 }

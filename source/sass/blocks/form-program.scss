@@ -27,6 +27,12 @@
   text-transform: uppercase;
 }
 
+.form-program__title sup {
+  position: relative;
+  top: -3px;
+  left: 1px;
+}
+
 .form-program__info-block {
   margin-top: -10px;
   padding-bottom: 10px;
@@ -89,8 +95,6 @@
   &:active ~ .form-program__control-radio {
     border: 2px solid $components-color;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
-
-    box-sizing: border-box;
   }
 
   &:disabled ~ .form-program__control-radio {
@@ -101,14 +105,13 @@
     color: rgba(34, 34, 34, 0.3)
   }
 
-
-
+  // ... , но работает!
   &:checked ~ .form-program__control-radio::before {
     content: "";
 
     position: absolute;
-    top: 9px;
-    left: 9px;
+    top: 52%;
+    right: 27%;
 
     width: 12px;
     height: 12px;
@@ -120,6 +123,9 @@
     background-color: $components-color;
 
     border-radius: 50%;
+
+    transform: translateX(100%);
+    transform: translateY(-50%);
   }
 }
 
@@ -133,6 +139,7 @@
 
   border: 1px solid #cecece;
   border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .form-program__radio-content {
@@ -178,36 +185,14 @@
 
   box-sizing: border-box;
 
-  // &::after {
-  //   content: "";
-
-  //   position: absolute;
-  //   top: 10px;
-  //   left: 10px;
-
-  //   width: 17px;
-  //   height: 13px;
-
-  //   background: url("../img/icon-mail.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: 0 0;
-  //   background-size: 17px 13px;
-  //   background-color: $components-color;
-  // }
-}
-
-.form-program__email-icon {
-  position: absolute;
-  top: 46px;
-  right: 36px;
-
-  width: 17px;
-  height: 13px;
-
   background: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 186px 16px;
   background-size: 17px 13px;
+
+  &:focus {
+    background-position: 185px 15px;
+  }
 }
 
 .form-program__phone {
@@ -217,20 +202,15 @@
   padding-right: 40px;
 
   text-transform: uppercase;
-}
-
-.form-program__phone-icon {
-  position: absolute;
-  top: 102px;
-  right: 33px;
-
-  width: 20px;
-  height: 20px;
 
   background: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 170px 12px;
   background-size: 20px 20px;
+
+  &:focus {
+    background-position: 169px 11px;
+  }
 }
 
 .form-program__comment-block {
@@ -280,6 +260,8 @@
   }
 
   &:focus {
+    padding-top: 9px;
+
     border-width: 2px;
     border-color: #444444;
   }
@@ -293,7 +275,7 @@
   position: relative;
 
   width: 100%;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
   padding: 0 20px;
 
   font-size: 24px;
@@ -324,6 +306,7 @@
 .form-program__checkbox-item {
   min-height: 42px;
   padding-left: 65px;
+
 }
 
 .form-program__checkbox-input {
@@ -338,8 +321,6 @@
   &:active ~ .form-program__control-checkbox {
     border: 2px solid $components-color;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
-
-    box-sizing: border-box;
   }
 
   &:disabled ~ .form-program__control-checkbox {
@@ -354,8 +335,10 @@
     content: "";
 
     position: absolute;
-    top: 8px;
-    left: 5px;
+    top: 60%;
+    left: 16%;
+    transform: translateX(-16%);
+    transform: translateY(-60%);
 
     width: 21px;
     height: 16px;
@@ -380,6 +363,8 @@
   height: 30px;
 
   border: 1px solid #cecece;
+
+  box-sizing: border-box;
 }
 
 .form-program__submit-block {
@@ -443,9 +428,9 @@
   }
 
   .form-program__radio-block {
-    min-height: 180px;
+    min-height: 190px;
     padding-left: 87px;
-    margin: -20px 70px 80px;
+    margin: -20px 70px 70px;
     padding-top: 0;
 
     border: 1px solid $add-components-color;
@@ -472,8 +457,11 @@
 
   .form-program__radio-input {
     &:checked ~ .form-program__control-radio::before {
-      top: 11px;
-      left: 11px;
+      top: 50%;
+      right: 50%;
+      left: 27%;
+      transform: translateX(50%);
+      transform: translateY(-50%);
 
       width: 18px;
       height: 18px;
@@ -535,20 +523,30 @@
   .form-program__email {
     width: 550px;
     margin-top: 16px;
+
+    background: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 515px 20px;
+    background-size: 17px 13px;
+
+    &:focus {
+      background-size: 17px 13px;
+      background-position: 514px 19px;
+    }
   }
 
   .form-program__phone {
     width: 535px;
-  }
 
-  .form-program__email-icon {
-    top: 67px;
-    right: 87px;
-  }
+    background: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 500px 18px;
+    background-size: 20px 20px;
 
-  .form-program__phone-icon {
-    top: 137px;
-    right: 84px;
+    &:focus {
+      background-size: 20px 21px;
+      background-position: 499px 17px;
+    }
   }
 
   .form-program__comment-block {
@@ -595,6 +593,10 @@
 
     font-size: 20px;
     line-height: 30px;
+
+    &:focus {
+      text-indent: 16px;
+    }
   }
 
   .form-program__checkbox-block {
@@ -651,8 +653,10 @@
 
   .form-program__checkbox-input {
     &:checked ~ .form-program__control-checkbox::before {
-      top: 11px;
-      left: 8px;
+      top: 50%;
+      left: 20%;
+      transform: translateX(-20%);
+      transform: translateY(-50%);
     }
   }
 
@@ -730,10 +734,26 @@
     flex-shrink: 0;
 
     width: 570px;
+    min-height: 188px;
     margin-top: 0;
     margin-left: 77px;
 
     box-sizing: border-box;
+  }
+
+  .form-program__radio-input {
+    &:checked ~ .form-program__control-radio::before {
+      top: 50%;
+      left: 28%;
+      right: -50%;
+      transform: translateX(-100%);
+      transform: translateY(-50%);
+
+      width: 18px;
+      height: 18px;
+
+      background-size: 18px 18px;
+    }
   }
 
   .form-program__owner-block {
@@ -773,33 +793,32 @@
 
   .form-program__email {
     width: 487px;
-    margin-left: 20px;
+    margin-left: 19  px;
     margin-top: 0;
+
+    background: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 450px 19px;
+    background-size: 17px 13px;
+
+    &:focus {
+      background-position: 449px 18px;
+    }
   }
 
   .form-program__phone {
     width: 473px;
     margin-left: 20px;
     margin-top: 0;
-  }
-
-  .form-program__email-icon {
-    top: 69px;
-    right: 780px;
-  }
-
-  .form-program__phone-icon {
-    position: absolute;
-    top: 65px;
-    right: 130px;
-
-    width: 20px;
-    height: 20px;
 
     background: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 432px 17px;
     background-size: 20px 20px;
+
+    &:focus {
+      background-position: 431px 16px;
+    }
   }
 
   .form-program__comment-block {

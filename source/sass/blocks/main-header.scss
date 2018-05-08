@@ -1,5 +1,6 @@
 .main-header {
-  margin-bottom: 37px;
+  min-height: 497px;
+  // margin-bottom: 37px;
 }
 
 .main-header__block {
@@ -8,7 +9,7 @@
   text-align: center;
 
   background-color: $components-color;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(#ffffff);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -40,6 +41,9 @@
 .main-header__image {
   position: absolute;
   top: -140px;
+  right: 50%;
+
+  transform: translateX(50%);
 }
 
 .main-header__button {
@@ -57,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    min-height: 803px;
+    min-height: 839px;
   }
 
   .main-header__block {
@@ -92,7 +96,6 @@
 
   .main-header__container {
     text-align: center;
-    z-index: -1;
   }
 
   .main-header__button {

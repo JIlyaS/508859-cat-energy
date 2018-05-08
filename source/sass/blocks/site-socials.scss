@@ -20,6 +20,10 @@
   vertical-align: center;
 }
 
+.site-socials__icon-svg {
+  fill: #666666;
+}
+
 @media (min-width: $tablet-width) {
   .site-socials {
     border: none;

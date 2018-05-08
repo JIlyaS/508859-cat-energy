@@ -81,6 +81,10 @@
   text-align: center;
 }
 
+.main-example__value {
+  white-space: nowrap;
+}
+
 .main-example__range {
   display: flex;
   justify-content: space-around;
@@ -122,14 +126,16 @@
 .main-example__range-end {
   position: relative;
 
+
   font-size: 16px;
   line-height: 20px;
   color: $main-font-color;
   text-transform: uppercase;
+  background-color: transparent;
 
   border: none;
 
-
+  // outline: none;
   box-sizing: border-box;
   cursor: pointer;
 }

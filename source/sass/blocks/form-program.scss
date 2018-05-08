@@ -254,6 +254,7 @@
 
   resize: none;
   box-sizing: border-box;
+  outline: none;
 
   &:hover {
     border-color: #cdcdcd;
@@ -793,7 +794,7 @@
 
   .form-program__email {
     width: 487px;
-    margin-left: 19  px;
+    margin-left: 19px;
     margin-top: 0;
 
     background: url("../img/icon-mail.svg");

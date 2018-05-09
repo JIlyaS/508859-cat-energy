@@ -123,6 +123,13 @@
     padding-left: 40px;
   }
 
+  .page-header__logo-image {
+    position: relative; //?
+    left: -40px; //?
+
+    width: 173px;
+    height: 58px;
+  }
 
   .page-header__burger {
     display: none;

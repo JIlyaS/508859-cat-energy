@@ -16,6 +16,15 @@
   padding-top: 1px;
 }
 
+/* Ретинизация */
+@media (min-resolution: $retina-dpi),
+       (min-resolution: $retina-dppx) {
+  .main-header__block {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
 .main-header__title {
   margin-top: 26px;
   margin-bottom: 20px;
@@ -42,6 +51,9 @@
   position: absolute;
   top: -140px;
   right: 50%;
+
+  width: 280px;
+  height: 271px;
 
   transform: translateX(50%);
 }
@@ -96,6 +108,13 @@
 
   .main-header__container {
     text-align: center;
+  }
+
+  .main-header__image {
+    top: -76px;
+
+    width: 709px;
+    height: 609px;
   }
 
   .main-header__button {

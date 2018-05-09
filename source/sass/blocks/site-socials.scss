@@ -22,6 +22,15 @@
 
 .site-socials__icon-svg {
   fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $components-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

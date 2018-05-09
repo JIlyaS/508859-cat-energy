@@ -16,6 +16,14 @@
   padding-top: 1px;
 }
 
+/* Ретинизация */
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .main-header__block {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
 .main-header__title {
   margin-top: 26px;
   margin-bottom: 20px;
@@ -120,6 +128,15 @@
 
     background: linear-gradient(to right, $main-back-color 50%, $components-color 50%);
   }
+
+    /* Ретинизация */
+    // @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
+    //        (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    //   .main-header__block {
+    //     background-image: url("../img/index-background-mobile@2x.jpg");
+    //     background-size: 640px auto;
+    //   }
+    // }
 
   .main-header__container {
     z-index: 0;

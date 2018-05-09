@@ -5,6 +5,7 @@
 .page-footer__address-block {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 
   min-height: 115px;
   padding: 0 20px;
@@ -13,22 +14,29 @@
 }
 
 .page-footer__address-block--color {
-  background-color: #f2f2f2;
+  background-color: $add-back-color;
 }
 
 .page-footer__logo-image {
-  margin-top: 35px;
-  margin-bottom: 15px;
+  margin-top: 38px;
+  margin-bottom: 28px;
 }
 
 .page-footer__socials {
   display: flex;
   flex-direction: row;
 
-  padding: 0 20px;
+  width: 280px;
+
+  box-sizing: border-box;
 }
 
 .page-footer__invitation {
+  display: block;
+  vertical-align: center;
+
+  width: 140px;
+
   font-size: 16px;
   line-height: 20px;
   color: $main-font-color;
@@ -36,21 +44,42 @@
 }
 
 .page-footer__address {
+  display: block;
+  vertical-align: center;
+
+  width: 140px;
+
   font-family: "Arial", sans-serif;
   font-style: normal;
-
   font-size: 14px;
   line-height: 20px;
   color: $paragraph-font-color;
 }
 
-.page-footer__card {
+.page-footer__map {
+  position: relative;
   width: 100%;
   height: 362px;
 
   background-color: #fdf7ef;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 177px;
+    left: 127px;
+
+    width: 62px;
+    height: 53px;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 62px 53px;
+  }
 }
 
 .page-footer__footer-bottom {
@@ -58,7 +87,7 @@
   flex-direction: column;
   align-items: center;
 
-  padding: 0 20px;
+  margin: 0 20px;
 }
 
 .page-footer__logo-block {
@@ -68,7 +97,7 @@
 
   width: 100%;
   min-height: 78px;
-  margin-top: -20px;
+  margin-top: -2px;
 }
 
 .page-footer__htmlacademy-link {
@@ -76,6 +105,10 @@
   font-size: 16px;
   line-height: 16px;
   color: $paragraph-font-color;
+}
+
+.page-footer__logo-htmlacademy {
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
@@ -94,7 +127,7 @@
   }
 
   .page-footer__invitation {
-    width: 150px;
+    width: 200px;
 
     font-size: 20px;
     line-height: 25px;
@@ -113,7 +146,7 @@
     line-height: 59px;
   }
 
-  .page-footer__card {
+  .page-footer__map {
     min-height: 398px;
   }
 
@@ -126,6 +159,28 @@
     min-height: 150px;
     padding: 0 30px;
   }
+
+  .page-footer__logo-img {
+    margin-top: -18px;
+    margin-left: -20px;
+    width: 162px;
+  }
+
+  .page-footer__logo-image {
+    margin-top: 26px;
+    margin-left: -20px;
+    margin-right: 0;
+  }
+
+  .page-footer__socials {
+    width: 324px;
+  }
+
+  .page-footer__logo-block {
+    margin: 0;
+    margin-right: -20px;
+    width: 162px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -135,13 +190,14 @@
 
   .page-footer__address-block {
     position: absolute;
-    top: 95px;
+    top: 80px;
     left: 110px;
+    z-index: 1;
 
     min-width: 570px;
     padding-left: 75px;
     padding-top: 0;
-    margin-top: 20px;
+    margin-top: 14px;
 
     box-sizing: border-box;
 
@@ -152,7 +208,7 @@
     text-align: left;
   }
 
-  .page-footer__card {
+  .page-footer__map {
     height: 400px;
   }
 
@@ -160,10 +216,17 @@
     justify-content: space-between;
 
     padding: 0 110px;
+    padding-top: 15px;
+
+    box-sizing: border-box;
   }
 
   .page-footer__socials {
-    width: 570px;
+    position: relative; //?
+    top: -10px; //?
+    left: 40px; //?
+
+    width: 610px;
     border: 1px solid black;
   }
 
@@ -172,7 +235,8 @@
   }
 
   .page-footer__logo-image {
-    margin-top: 15px;
+    margin-top: 9px;
+    margin-left: -20px;
   }
 
   .page-footer__logo-block {

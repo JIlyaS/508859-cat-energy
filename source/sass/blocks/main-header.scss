@@ -1,5 +1,6 @@
 .main-header {
-  margin-bottom: 42px;
+  min-height: 497px;
+  // margin-bottom: 37px;
 }
 
 .main-header__block {
@@ -8,7 +9,7 @@
   text-align: center;
 
   background-color: $components-color;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(#ffffff);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -16,6 +17,9 @@
 }
 
 .main-header__title {
+  margin-top: 26px;
+  margin-bottom: 20px;
+
   font-size: 36px;
   line-height: 36px;
   color: $add-font-color;
@@ -37,14 +41,17 @@
 .main-header__image {
   position: absolute;
   top: -140px;
+  right: 50%;
+
+  transform: translateX(50%);
 }
 
 .main-header__button {
   position: relative;
-  top: 135px;
+  top: 133px;
 
   display: inline-block;
-  width: 280px;
+  width: 280px; // 100%
 
   font-size: 14px;
   line-height: 40px;
@@ -54,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    min-height: 803px;
+    min-height: 839px;
   }
 
   .main-header__block {
@@ -68,7 +75,7 @@
 
   .main-header__title {
     z-index: 1;
-    margin-top: 35px;
+    margin-top: 30px;
     margin-left: 15px;
 
     font-size: 60px;
@@ -78,10 +85,9 @@
 
   .main-header__desc {
     position: relative;
-    top: -10px;
+    top: 20px;
     z-index: 1;
     margin-left: 20px;
-
 
     font-size: 20px;
     line-height: 20px;
@@ -90,14 +96,13 @@
 
   .main-header__container {
     text-align: center;
-    z-index: -1;
   }
 
   .main-header__button {
     position: relative;
-    top: -43px;
-    left: -148px;
-    z-index: 1;
+    top: -47px;
+    left: -143px;
+    z-index: 2;
 
     width: 245px;
     min-height: 53px;
@@ -110,12 +115,18 @@
 @media (min-width: $desktop-width) {
   .main-header {
     padding: 0 75px;
-    min-height: 515px;
+    min-height: 695px;
     margin-bottom: 80px;
+
+    background: linear-gradient(to right, $main-back-color 50%, $components-color 50%);
+  }
+
+  .main-header__container {
+    z-index: 0;
   }
 
   .main-header__title {
-    margin-top: 42px;
+    margin-top: 222px;
   }
 
   .main-header__desc {
@@ -123,7 +134,7 @@
   }
 
   .main-header__button {
-    top: -30px;
+    top: 68px;
     left: -407px;
   }
 

@@ -1,8 +1,22 @@
 .main-nav {
-  display: none;
+  display: block;
 
   min-height: 200px;
   width: 100%;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--opened {
+    display: block;
+  }
+
+  .main-nav--nojs {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -11,7 +25,7 @@
     justify-content: flex-end;
 
     min-width: 516px;
-    min-height: 100px;
+    min-height: 110px;
     padding-right: 30px; //?
   }
 }
@@ -22,5 +36,6 @@
     align-items: center;
 
     min-height: 180px; //?
+    padding: 0;
   }
 }

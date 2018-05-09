@@ -152,6 +152,15 @@
     min-width: 192px;
   }
 
+  .page-header__logo-image {
+    position: relative; //?
+    top: -5px;
+    left: -40px; //?
+
+    width: 202px;
+    height: 59px;
+  }
+
   .page-header__block {
     padding: 0;
     min-width: 1220px;

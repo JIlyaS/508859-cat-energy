@@ -248,43 +248,43 @@
   }
 
   .program__losing .program__title::before {
-    left: 65px;
-    top: 35px;
+    left: 45px;
+    top: 13px;
 
-    width: 35px;
-    height: 49px;
+    width: 70px;
+    height: 97px;
 
     background-image: url("../img/icon-cat-slim.svg");
-    background-size: 35px 49px;
+    background-size: 70px 97px;
   }
 
   .program__losing .program__title::after {
-    left: 57px;
-    top: 38px;
+    left: 31px;
+    top: 19px;
 
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 
     background-color: $components-color;
   }
 
   .program__mass .program__title::before {
-    left: 50px;
-    top: 50px;
+    left: 13px;
+    top: 41px;
 
-    width: 67px;
-    height: 28px;
+    width: 134px;
+    height: 56px;
 
     background-image: url("../img/icon-cat-pro.svg");
-    background-size: 67px 28px;
+    background-size: 134px 56px;
   }
 
   .program__mass .program__title::after {
-    left: 57px;
-    top: 38px;
+    left: 31px;
+    top: 19px;
 
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 
     background-color: $components-color;
   }

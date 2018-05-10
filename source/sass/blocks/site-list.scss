@@ -17,7 +17,6 @@
   min-height: 60px;
   padding-left: 80px;
 
-  font-family: "Arial", sans-serif;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -27,7 +26,11 @@
 
 .site-list__item-content {
   position: relative;
+
   font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $paragraph-font-color;
 }
 
 .site-list__item:first-child .site-list__item-content::before {
@@ -48,7 +51,7 @@
 }
 
 @media (min-resolution: $retina-dpi),
-       (min-resolution: $retina-dppx) {
+  (min-resolution: $retina-dppx) {
   .site-list__item:first-child .site-list__item-content::before {
     background-image: url("../img/advantage-leaf@2x.png");
     background-size: 50px auto;
@@ -89,7 +92,7 @@
 }
 
 @media (min-resolution: $retina-dpi),
-       (min-resolution: $retina-dppx) {
+  (min-resolution: $retina-dppx) {
   .site-list__item:nth-child(2) .site-list__item-content::before {
     background-image: url("../img/advantage-powder@2x.png");
     background-size: 50px auto;
@@ -130,7 +133,7 @@
 }
 
 @media (min-resolution: $retina-dpi),
-       (min-resolution: $retina-dppx) {
+  (min-resolution: $retina-dppx) {
   .site-list__item:nth-child(3) .site-list__item-content::before {
     background-image: url("../img/advantage-dining@2x.png");
     background-size: 50px auto;
@@ -171,7 +174,7 @@
 }
 
 @media (min-resolution: $retina-dpi),
-       (min-resolution: $retina-dppx) {
+  (min-resolution: $retina-dppx) {
   .site-list__item:nth-child(4) .site-list__item-content::before {
     background-image: url("../img/advantage-clock@2x.png");
     background-size: 50px auto;
@@ -227,7 +230,7 @@
       z-index: -1;
 
       width: 70px;
-      heigth: 227px;
+      height: 227px;
 
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 281px;
@@ -248,7 +251,7 @@
       z-index: -1;
 
       width: 70px;
-      heigth: 227px;
+      height: 227px;
 
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 281px;
@@ -269,7 +272,7 @@
       z-index: -1;
 
       width: 70px;
-      heigth: 227px;
+      height: 227px;
 
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 281px;
@@ -290,7 +293,7 @@
       z-index: -1;
 
       width: 70px;
-      heigth: 227px;
+      height: 227px;
 
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 281px;
@@ -300,13 +303,12 @@
     }
   }
 
-
   .site-list__item:first-child .site-list__item-content::after,
   .site-list__item:nth-child(2) .site-list__item-content::after,
   .site-list__item:nth-child(3) .site-list__item-content::after,
   .site-list__item:nth-child(4) .site-list__item-content::after {
     top: -115px;
-    left: 0px;
+    left: 0;
 
     width: 80px;
     height: 80px;

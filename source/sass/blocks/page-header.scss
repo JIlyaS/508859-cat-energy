@@ -81,7 +81,6 @@
 // }
 
 @media (max-width: $mobile-width-only) {
-
   .page-header__burger--closed {
     background-image: url("../img/icon-mobile-menu.svg");
   }
@@ -117,16 +116,22 @@
     padding: 0 30px;
   }
 
-
   .page-header__container {
     min-width: 192px;
     padding-left: 40px;
   }
 
-  .page-header__logo-image {
-    position: relative; //?
-    left: -40px; //?
+  .page-header--position .page-header__logo-link {
+    position: relative;
+    left: -40px;
+  }
 
+  .page-header__logo-link {
+    position: relative;
+    left: -10px;
+  }
+
+  .page-header__logo-image {
     width: 173px;
     height: 58px;
   }

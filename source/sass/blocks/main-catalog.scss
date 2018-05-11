@@ -20,8 +20,9 @@
 
 .main-catalog__product-image {
   position: relative;
-  top: 20px;
-  left: 22px;
+
+  width: 140px;
+  height: 144px;
 }
 
 .main-catalog__product-block {
@@ -30,7 +31,6 @@
   justify-content: center;
 
   padding-top: 18px;
-  padding-left: 40px;
   margin-bottom: 20px;
 }
 
@@ -198,7 +198,7 @@
     margin-top: 83px;
 
     min-height: 432px;
-    padding: 0 0;
+    padding: 0;
 
     background-color: #f2f2f2;
 
@@ -206,34 +206,43 @@
   }
 
   .main-catalog__product-block {
+    width: 324px;
     margin: 0;
     padding: 0;
   }
 
   .main-catalog__product-title {
     position: relative;
-    bottom: 42px;
+    bottom: 46px;
 
     padding: 0 40px;
-    margin: inherit auto;
+    margin: inherit;
 
     font-size: 20px;
     line-height: 20px;
     text-align: center;
   }
 
-  .main-catalog__product-link {
+  .main-catalog__item:nth-child(2n+1) .main-catalog__product-title {
+    bottom: 50px;
   }
 
   .main-catalog__product-image {
     position: relative;
     left: 0;
-    top: -55px;
+    top: -72px;
+
+    width: 324px;
+    height: auto;
+  }
+
+  .main-catalog__item:nth-child(2n+1) .main-catalog__product-image {
+    top: -100px;
   }
 
   .main-catalog__product-desc {
     position: relative;
-    bottom: 80px;
+    bottom: 88px;
 
     width: 250px;
     margin: 0 auto;
@@ -242,6 +251,10 @@
     line-height: 32px;
 
     border-collapse: collapse;
+  }
+
+  .main-catalog__item:nth-child(2n+1) .main-catalog__product-desc {
+    bottom: 95px;
   }
 
   .main-catalog__field {
@@ -333,11 +346,32 @@
   }
 
   .main-catalog__product-title {
-    padding: 0 20px;
+    bottom: 44px;
+
+    padding: 0 40px;
+  }
+
+  .main-catalog__item:nth-child(2n+1) .main-catalog__product-title {
+    bottom: 48px;
+  }
+
+  .main-catalog__product-image {
+    top: -80px;
+
+    width: 245px;
+  }
+
+  .main-catalog__item:nth-child(2n+1) .main-catalog__product-image {
+    top: -110px;
   }
 
   .main-catalog__product-desc {
+    bottom: 81px;
     width: 174px;
+  }
+
+  .main-catalog__item:nth-child(2n+1) .main-catalog__product-desc {
+    bottom: 91px;
   }
 
   .main-catalog__order-button {

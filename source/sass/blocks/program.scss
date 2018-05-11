@@ -113,6 +113,7 @@
   position: relative;
 
   display: inline-block;
+  width: 200px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -121,25 +122,21 @@
   text-transform: uppercase;
   vertical-align: top;
 
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 96px 4px;
+  background-size: 24px 11px;
+
   &:active {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 33px 11px;
+
     opacity: 0.3;
   }
 
-  &::after {
-    content: "";
-
-    position: absolute;
-    left: 96px;
-    top: 4px;
-    z-index: 1;
-
-    width: 24px;
-    height: 11px;
-
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 24px 11px;
+  &:hover {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 33px 11px;
   }
 }
 
@@ -163,43 +160,43 @@
   }
 
   .program__losing .program__title::before {
-    left: 500px;
-    top: 120px;
+    left: 455px;
+    top: 52px;
 
-    width: 35px;
-    height: 49px;
+    width: 140px;
+    height: 194px;
 
     background-image: url("../img/icon-cat-slim.svg");
-    background-size: 35px 49px;
+    background-size: 140px 194px;
   }
 
   .program__losing .program__title::after {
-    left: 494px;
-    top: 125px;
+    left: 425px;
+    top: 65px;
 
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
 
     background-color: $components-color;
   }
 
   .program__mass .program__title::before {
-    left: 495px;
-    top: 130px;
+    left: 390px;
+    top: 108px;
 
-    width: 67px;
-    height: 28px;
+    width: 268px;
+    height: 112px;
 
     background-image: url("../img/icon-cat-pro.svg");
-    background-size: 67px 28px;
+    background-size: 268px 112px;
   }
 
   .program__mass .program__title::after {
-    left: 507px;
-    top: 118px;
+    left: 425px;
+    top: 65px;
 
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
 
     background-color: $components-color;
   }
@@ -226,6 +223,8 @@
     font-size: 20px;
     line-height: 20px;
 
+    background-position: 163px 5px;
+
     &::after {
       left: 163px;
       top: 6px;
@@ -249,43 +248,43 @@
   }
 
   .program__losing .program__title::before {
-    left: 65px;
-    top: 35px;
+    left: 45px;
+    top: 13px;
 
-    width: 35px;
-    height: 49px;
+    width: 70px;
+    height: 97px;
 
     background-image: url("../img/icon-cat-slim.svg");
-    background-size: 35px 49px;
+    background-size: 70px 97px;
   }
 
   .program__losing .program__title::after {
-    left: 57px;
-    top: 38px;
+    left: 31px;
+    top: 19px;
 
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 
     background-color: $components-color;
   }
 
   .program__mass .program__title::before {
-    left: 50px;
-    top: 50px;
+    left: 13px;
+    top: 41px;
 
-    width: 67px;
-    height: 28px;
+    width: 134px;
+    height: 56px;
 
     background-image: url("../img/icon-cat-pro.svg");
-    background-size: 67px 28px;
+    background-size: 134px 56px;
   }
 
   .program__mass .program__title::after {
-    left: 57px;
-    top: 38px;
+    left: 31px;
+    top: 19px;
 
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 
     background-color: $components-color;
   }

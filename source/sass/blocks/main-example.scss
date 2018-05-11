@@ -85,6 +85,11 @@
   white-space: nowrap;
 }
 
+.main-example__result-block-before {
+  margin: 0 -20px;
+  margin-top: -5px;
+}
+
 .main-example_image-before {
   width: 320px;
   height: 240px;
@@ -98,7 +103,7 @@
   display: flex;
   justify-content: space-around;
 
-  margin-top: 52px;
+  margin-top: 28px;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -210,6 +215,10 @@
     padding-top: 29px;
 
     text-align: center;
+  }
+
+  .main-example__result-block-before {
+    margin: 0;
   }
 
   .main-example__results {

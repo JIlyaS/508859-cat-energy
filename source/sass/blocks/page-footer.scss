@@ -44,6 +44,7 @@
 }
 
 .page-footer__address {
+  z-index: 2;
   display: block;
   vertical-align: center;
 
@@ -80,6 +81,44 @@
     background-position: 0 0;
     background-size: 62px 53px;
   }
+}
+
+.page-footer__map-yandex {
+  position: absolute;
+  z-index: 1;
+
+  border: none;
+}
+
+.page-footer__htmlacademy-imglink {
+  width: 27px;
+  height: 34px;
+}
+
+.page-footer__icon-svg {
+  position: relative;
+  top: -5px;
+  left: -5px;
+
+  width: 40px;
+  height: 47px;
+
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $components-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+// Прохожу по вложенности селекторов?
+.page-footer__htmlacademy-link:hover ~ .page-footer__htmlacademy-imglink > .page-footer__icon-svg,
+.page-footer__htmlacademy-link:focus ~ .page-footer__htmlacademy-imglink > .page-footer__icon-svg {
+  fill: $components-color;
 }
 
 /* Ретинизация */
@@ -198,6 +237,11 @@
     }
   }
 
+  .page-footer__map-yandex {
+    width: 768px;
+    min-height: 400px;
+  }
+
   /* Ретинизация */
   @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
     (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
@@ -286,6 +330,11 @@
       background-image: url("../img/map-pin.png");
       background-size: 124px 106px;
     }
+  }
+
+  .page-footer__map-yandex {
+    width: 1440px;
+    min-height: 400px;
   }
 
   /* Ретинизация */

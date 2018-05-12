@@ -116,7 +116,7 @@
     width: 12px;
     height: 12px;
 
-    // background-image: url("../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 12px 12px;
@@ -183,15 +183,6 @@
   text-transform: uppercase;
 
   box-sizing: border-box;
-
-  background: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: 186px 16px;
-  background-size: 17px 13px;
-
-  &:focus {
-    background-position: 185px 15px;
-  }
 }
 
 .form-program__phone {
@@ -201,15 +192,28 @@
   padding-right: 40px;
 
   text-transform: uppercase;
+}
+.form-program__email:focus ~ .form-program__icon-svg-email,
+.form-program__email:active ~ .form-program__icon-svg-email,
+.form-program__phone:focus ~ .form-program__icon-svg-phone ,
+.form-program__phone:active ~ .form-program__icon-svg-phone {
+  fill: $components-color;
+}
 
-  background: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 170px 12px;
-  background-size: 20px 20px;
+// .form-program__icon-svg--error {
+//   fill: #ff8282;
+// }
 
-  &:focus {
-    background-position: 169px 11px;
-  }
+.form-program__icon-svg-email {
+  position: absolute;
+  top: 46px;
+  left: 267px;
+}
+
+.form-program__icon-svg-phone {
+  position: absolute;
+  top: 103px;
+  left: 267px;
 }
 
 .form-program__comment-block {
@@ -520,30 +524,22 @@
   .form-program__email {
     width: 550px;
     margin-top: 16px;
-
-    background: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 515px 20px;
-    background-size: 17px 13px;
-
-    &:focus {
-      background-size: 17px 13px;
-      background-position: 514px 19px;
-    }
   }
 
   .form-program__phone {
     width: 535px;
+  }
 
-    background: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 500px 18px;
-    background-size: 20px 20px;
+  .form-program__icon-svg-email {
+    position: absolute;
+    top: 67px;
+    left: 663px;
+  }
 
-    &:focus {
-      background-size: 20px 21px;
-      background-position: 499px 17px;
-    }
+  .form-program__icon-svg-phone {
+    position: absolute;
+    top: 136px;
+    left: 663px;
   }
 
   .form-program__comment-block {
@@ -789,30 +785,24 @@
     width: 487px;
     margin-left: 19px;
     margin-top: 0;
-
-    background: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 450px 19px;
-    background-size: 17px 13px;
-
-    &:focus {
-      background-position: 449px 18px;
-    }
   }
 
   .form-program__phone {
     width: 473px;
     margin-left: 20px;
     margin-top: 0;
+  }
 
-    background: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 432px 17px;
-    background-size: 20px 20px;
+  .form-program__icon-svg-email {
+    position: absolute;
+    top: 70px;
+    left: 642px;
+  }
 
-    &:focus {
-      background-position: 431px 16px;
-    }
+  .form-program__icon-svg-phone {
+    position: absolute;
+    top: 67px;
+    left: 1290px;
   }
 
   .form-program__comment-block {

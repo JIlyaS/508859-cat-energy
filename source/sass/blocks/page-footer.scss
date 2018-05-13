@@ -90,15 +90,21 @@
   border: none;
 }
 
-.page-footer__htmlacademy-imglink {
-  width: 27px;
-  height: 34px;
+.page-footer__htmlacademy-link {
+  position: relative;
+
+  height: 30px;
+}
+
+.page-footer__htmlacademy-content {
+  position: relative;
+  top: -27px;
 }
 
 .page-footer__icon-svg {
   position: relative;
-  top: -5px;
-  left: -5px;
+  top: -7px;
+  left: 127px;
 
   width: 40px;
   height: 47px;
@@ -115,9 +121,8 @@
   }
 }
 
-// Прохожу по вложенности селекторов?
-.page-footer__htmlacademy-link:hover ~ .page-footer__htmlacademy-imglink > .page-footer__icon-svg,
-.page-footer__htmlacademy-link:focus ~ .page-footer__htmlacademy-imglink > .page-footer__icon-svg {
+.page-footer__htmlacademy-link:hover > .page-footer__icon-svg,
+.page-footer__htmlacademy-link:focus > .page-footer__icon-svg {
   fill: $components-color;
 }
 
@@ -282,6 +287,16 @@
     margin-right: -20px;
     width: 162px;
   }
+
+  .page-footer__htmlacademy-link {
+    top: -3px;
+    left: -2px;
+  }
+
+  .page-footer__icon-svg {
+    top: -8px;
+    left: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -293,7 +308,7 @@
     position: absolute;
     top: 80px;
     left: 110px;
-    z-index: 1;
+    z-index: 3;
 
     min-width: 570px;
     padding-left: 75px;
@@ -384,7 +399,7 @@
     box-sizing: border-box;
   }
 
-  .page-footer__htmlacademy-imglink {
-    margin-left: 20px;
+  .page-footer__htmlacademy-link {
+    top: 2px;
   }
 }

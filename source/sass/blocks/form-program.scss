@@ -206,14 +206,14 @@
 
 .form-program__icon-svg-email {
   position: absolute;
-  top: 46px;
-  left: 267px;
+  bottom: 120px;
+  right: 35px;
 }
 
 .form-program__icon-svg-phone {
   position: absolute;
-  top: 103px;
-  left: 267px;
+  bottom: 57px;
+  right: 33px;
 }
 
 .form-program__comment-block {
@@ -258,6 +258,7 @@
   resize: none;
   box-sizing: border-box;
   outline: none;
+  overflow: hidden; //?
 
   &:hover {
     border-color: #cdcdcd;
@@ -532,14 +533,14 @@
 
   .form-program__icon-svg-email {
     position: absolute;
-    top: 67px;
-    left: 663px;
+    bottom: 142px;
+    right: 86px;
   }
 
   .form-program__icon-svg-phone {
     position: absolute;
-    top: 136px;
-    left: 663px;
+    bottom: 65px;
+    right: 84px;
   }
 
   .form-program__comment-block {
@@ -795,14 +796,14 @@
 
   .form-program__icon-svg-email {
     position: absolute;
-    top: 70px;
-    left: 642px;
+    bottom: 65px;
+    right: 780px;
   }
 
   .form-program__icon-svg-phone {
     position: absolute;
-    top: 67px;
-    left: 1290px;
+    bottom: 62px;
+    right: 130px;
   }
 
   .form-program__comment-block {

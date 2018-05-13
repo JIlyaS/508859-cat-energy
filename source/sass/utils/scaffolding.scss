@@ -19,9 +19,8 @@
 }
 
 body {
-  // width: 100%;
-  // width: 320px;
-  // margin: 0 auto;
+  width: 320px;
+  margin: 0 auto;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -59,14 +58,14 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-// @media (min-width: $tablet-width) {
-//   body {
-//     width: 768px;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
 
-// @media (min-width: $desktop-width) {
-//   body {
-//     width: 1300px;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  body {
+    width: 1300px;
+  }
+}

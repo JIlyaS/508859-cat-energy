@@ -1,6 +1,4 @@
 .main-advantages {
-  width: 320px;
-  margin: 0 auto;
   padding: 0 20px;
   margin-bottom: 40px;
 }
@@ -18,11 +16,12 @@
 @media (min-width: $tablet-width) {
   .main-advantages {
     padding: 0 30px;
-    margin-bottom: -35px;
+    margin-bottom: -30px;
   }
 
   .main-advantages__title {
     padding-top: 12px;
+    margin-bottom: 46px;
 
     font-size: 60px;
     line-height: 60px;

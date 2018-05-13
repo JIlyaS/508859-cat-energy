@@ -4,11 +4,6 @@
   background-color: $add-back-color;
 }
 
-.main-example__container {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .main-example__block {
   padding: 0 20px;
 }
@@ -222,10 +217,6 @@
     text-align: center;
   }
 
-  .main-example__result-block-before {
-    margin: 0;
-  }
-
   .main-example__results {
     display: flex;
     flex-direction: column;
@@ -285,6 +276,7 @@
     top: -30px;
     width: 384px;
     height: 517px;
+    margin: 0;
     overflow: hidden;
   }
 

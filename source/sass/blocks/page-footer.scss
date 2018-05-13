@@ -7,20 +7,10 @@
   align-items: center;
   justify-content: space-around;
 
-  width: 100%;
   min-height: 115px;
   padding: 0 20px;
 
   background-color: $main-back-color;
-}
-
-.page-footer__address-block-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  width: 320px;
-  margin: 0 auto;
 }
 
 .page-footer__address-block--color {
@@ -97,15 +87,7 @@
   position: absolute;
   z-index: 1;
 
-  width: 100%;
-
   border: none;
-}
-
-.page-footer__htmlacademy-link {
-  position: relative;
-
-  height: 30px;
 }
 
 .page-footer__htmlacademy-content {
@@ -173,17 +155,14 @@
 
   width: 100%;
   min-height: 78px;
-
   margin-top: -2px;
 }
 
-.page-footer__logo-block-container {
-  width: 280px;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
 .page-footer__htmlacademy-link {
+  position: relative;
+
+  height: 30px;
+
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;

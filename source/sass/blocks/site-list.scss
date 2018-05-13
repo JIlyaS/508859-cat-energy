@@ -19,7 +19,7 @@
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
   color: $paragraph-font-color;
   box-sizing: border-box;
 }
@@ -29,7 +29,7 @@
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
   color: $paragraph-font-color;
 }
 
@@ -209,7 +209,7 @@
   .site-list__item {
     min-height: 318px;
     width: 46%; // 354px
-    padding-right: 80px;
+    padding-right: 110px;
     padding-left: 0;
     padding-top: 113px;
 
@@ -328,6 +328,6 @@
     width: 245px;
     min-height: 300px;
 
-    padding-right: 0;
+    padding-right: 30px;
   }
 }

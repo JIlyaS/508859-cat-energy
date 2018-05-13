@@ -215,7 +215,7 @@
 
   .main-catalog__product-title {
     position: relative;
-    bottom: 46px;
+    bottom: 50px;
 
     padding: 0 40px;
     margin: inherit;
@@ -226,25 +226,25 @@
   }
 
   .main-catalog__item:nth-child(2n+1) .main-catalog__product-title {
-    bottom: 50px;
+    bottom: 54px;
   }
 
   .main-catalog__product-image {
     position: relative;
     left: 0;
-    top: -72px;
+    top: -75px;
 
     width: 324px;
     height: auto;
   }
 
   .main-catalog__item:nth-child(2n+1) .main-catalog__product-image {
-    top: -100px;
+    top: -103px;
   }
 
   .main-catalog__product-desc {
     position: relative;
-    bottom: 88px;
+    bottom: 84px;
 
     width: 250px;
     margin: 0 auto;
@@ -256,7 +256,7 @@
   }
 
   .main-catalog__item:nth-child(2n+1) .main-catalog__product-desc {
-    bottom: 95px;
+    bottom: 93px;
   }
 
   .main-catalog__field {

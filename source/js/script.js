@@ -32,20 +32,50 @@ burgerMenu.addEventListener("click", function (event) {
 
 });
 
-if (document.querySelector(".form-program")) {
-  var formInput = document.querySelector(".form-program");
+if (document.querySelector('.form-program__name')) {
+  var errorEmail = document.querySelector('.form-program__name');
 
-  formInput.addEventListener("input", function (event) {
-    var target = event.target;
-    var input = target.closest('input');
-
-    if (!input) return;
-    if (!formInput.contains(input)) return;
-
-    if (target.value === "" && target.hasAttribute("required")) {
-      target.classList.add('form-input--error');
+  errorEmail.addEventListener("blur", function (event) {
+    if (this.value === "" && this.hasAttribute("required")) {
+      this.classList.add('form-program__input--error');
     } else {
-      target.classList.remove('form-input--error');
+      this.classList.remove('form-program__input--error');
+    }
+  });
+}
+
+if (document.querySelector('.form-program__weight')) {
+  var errorEmail = document.querySelector('.form-program__weight');
+
+  errorEmail.addEventListener("blur", function (event) {
+    if (this.value === "" && this.hasAttribute("required")) {
+      this.classList.add('form-program__input--error');
+    } else {
+      this.classList.remove('form-program__input--error');
+    }
+  });
+}
+
+if (document.querySelector('.form-program__email')) {
+  var errorEmail = document.querySelector('.form-program__email');
+
+  errorEmail.addEventListener("blur", function (event) {
+    if (this.value === "" && this.hasAttribute("required")) {
+      this.classList.add('form-program__input--error');
+    } else {
+      this.classList.remove('form-program__input--error');
+    }
+  });
+}
+
+if (document.querySelector('.form-program__phone')) {
+  var errorEmail = document.querySelector('.form-program__phone');
+
+  errorEmail.addEventListener("blur", function (event) {
+    if (this.value === "" && this.hasAttribute("required")) {
+      this.classList.add('form-program__input--error');
+    } else {
+      this.classList.remove('form-program__input--error');
     }
   });
 }

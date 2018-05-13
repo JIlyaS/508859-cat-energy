@@ -1,9 +1,9 @@
 .form-input {
   height: 45px;
 
-  text-indent: 15px;
+  // text-indent: 15px;
 
-  border: 1px solid $add-components-color;
+  // border: 1px solid $add-components-color;
 
   box-sizing: border-box;
 
@@ -16,18 +16,11 @@
   }
 
   &:focus {
-    text-indent: 14px;
+    text-indent: 15px;
 
     border-width: 2px;
     border-color: #444444;
   }
-}
-
-.form-input--error {
-  text-indent: 14px;
-
-  border-width: 2px;
-  border-color: #ff8282;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,7 +32,14 @@
     text-indent: 20px;
 
     &:focus {
-      text-indent: 19px;
+      text-indent: 20px;
     }
+  }
+
+  .form-input--error {
+    text-indent: 19px;
+
+    border-width: 2px;
+    border-color: #ff8282;
   }
 }

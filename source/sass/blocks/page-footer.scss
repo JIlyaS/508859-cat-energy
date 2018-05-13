@@ -90,12 +90,6 @@
   border: none;
 }
 
-.page-footer__htmlacademy-link {
-  position: relative;
-
-  height: 30px;
-}
-
 .page-footer__htmlacademy-content {
   position: relative;
   top: -27px;
@@ -165,6 +159,10 @@
 }
 
 .page-footer__htmlacademy-link {
+  position: relative;
+
+  height: 30px;
+
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -307,7 +305,7 @@
   .page-footer__address-block {
     position: absolute;
     top: 80px;
-    left: 110px;
+    left: 40px;
     z-index: 3;
 
     min-width: 570px;
@@ -348,7 +346,7 @@
   }
 
   .page-footer__map-yandex {
-    width: 1440px;
+    width: 1300px;
     min-height: 400px;
   }
 
@@ -364,7 +362,7 @@
   .page-footer__footer-bottom {
     justify-content: space-between;
 
-    padding: 0 110px;
+    padding: 0 40px;
     padding-top: 15px;
 
     box-sizing: border-box;

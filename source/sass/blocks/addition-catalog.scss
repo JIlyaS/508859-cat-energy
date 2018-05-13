@@ -14,17 +14,19 @@
 
   padding-top: 10px;
   padding-bottom: 18px;
+  margin-right: -20px;
 
   font-size: 24px;
   line-height: 24px;
   color: $main-font-color;
+  text-align: left;
 
   &::after {
     content: "";
 
     position: absolute;
-    top: 22px;
-    right: -20px;
+    top: 23px;
+    right: 0;
 
     width: 53px;
     height: 3px;
@@ -131,7 +133,7 @@
 
       position: absolute;
       top: 32px;
-      right: -30px;
+      right: -11px;
 
       width: 330px;
       height: 3px;
@@ -196,7 +198,7 @@
 
   .additional-catalog__container {
     width: 895px;
-    padding-left: 110px;
+    padding-left: 40px;
     padding-right: 0;
   }
 
@@ -218,9 +220,9 @@
 
       position: absolute;
       top: 34px;
-      right: -434px;
+      right: -345px;
 
-      width: 955px;
+      width: 885px;
       height: 3px;
 
       background-color: $components-color;

@@ -51,10 +51,11 @@
 
   .form-page__title {
     margin-top: 10px;
-    padding: 0 99px;
+    padding: 0 30px;
   }
 
   .form-page__description {
-    padding-left: 60px;
+    position: relative;
+    left: -30px;
   }
 }

@@ -1,4 +1,6 @@
 .main-advantages {
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
   margin-bottom: 40px;
 }
@@ -29,7 +31,7 @@
 
 @media (min-width: $desktop-width) {
   .main-advantages {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .main-advantages__title {

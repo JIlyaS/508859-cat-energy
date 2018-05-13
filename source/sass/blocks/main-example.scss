@@ -4,6 +4,11 @@
   background-color: $add-back-color;
 }
 
+.main-example__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .main-example__block {
   padding: 0 20px;
 }
@@ -407,13 +412,13 @@
   .main-example__example-block {
     width: 570px;
     height: 642px;
-    padding: 0 110px;
+    padding: 0 40px;
 
     box-sizing: border-box;
   }
 
   .main-example__result-block {
-    width: 760px;
+    width: 690px;
     height: 463px;
     margin-top: 180px;
 
@@ -427,6 +432,7 @@
   }
 
   .main-example__description {
+    padding-top: 3px;
     width: 435px;
     margin-bottom: 20px;
   }
@@ -492,7 +498,7 @@
     position: static;
 
     width: 100%;
-    margin-top: 30px;
+    margin-top: 25px;
 
     text-align: left;
   }

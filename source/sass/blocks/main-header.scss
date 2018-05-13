@@ -3,15 +3,25 @@
   // margin-bottom: 37px;
 }
 
+.main-header__container-top {
+  width: 100%;
+  min-height: 305px;
+
+  background-color: $components-color;
+}
+
 .main-header__block {
   min-height: 305px;
+  width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
   text-align: center;
 
   background-color: $components-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px auto;
+  background-position: center;
 
   padding-top: 1px;
 }
@@ -43,6 +53,9 @@
 
 .main-header__container {
   position: relative;
+
+  width: 320px;
+  margin: auto;
   min-height: 155px;
   padding: 0 20px;
 }
@@ -133,7 +146,7 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    padding: 0 75px;
+    width: 1300px;
     min-height: 695px;
     margin-bottom: 80px;
 
@@ -141,7 +154,7 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 100% 0;
-    background-size: 720px auto;
+    background-size: 650px auto;
   }
 
   /* Ретинизация */
@@ -149,7 +162,7 @@
     (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
     .main-header__block {
       background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 720px auto;
+      background-size: 650px auto;
     }
   }
 
@@ -159,10 +172,11 @@
 
   .main-header__title {
     margin-top: 222px;
+    margin-left: 20px;
   }
 
   .main-header__desc {
-    margin-left: 15px;
+    margin-left: 20px;
   }
 
   .main-header__button {
@@ -172,7 +186,7 @@
 
   .main-header__image {
     position: absolute; //?
-    left: 210px;
+    left: 215px;
     top: -245px;
 
     width: 552px;

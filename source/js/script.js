@@ -7,9 +7,9 @@ var headerBurger = document.querySelector('.page-header__burger');
 var headerLogo = document.querySelector('.page-header__logo-link');
 
 mainNav.classList.remove('main-nav--nojs');
-headerBurger.classList.remove('page-header--nojs');
-headerBurgerBlock.classList.remove('page-header--nojs');
-headerLogo.classList.remove('page-header--nojs');
+headerBurger.classList.remove('page-header__burger--nojs');
+headerBurgerBlock.classList.remove('page-header__burger-block--nojs');
+headerLogo.classList.remove('page-header__logo-link--nojs');
 
 burgerMenu.addEventListener("click", function (event) {
   event.preventDefault();

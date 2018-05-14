@@ -16,7 +16,7 @@ var run = require("run-sequence");
 var del = require("del");
 var server = require("browser-sync").create();
 
-gulp.task("style", function() {
+gulp.task("style", function () {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -89,7 +89,7 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", function () {
   server.init({
     server: "build/"
     // notify: false,
@@ -100,5 +100,5 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
-  // gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html").on("change", server.reload);
 });

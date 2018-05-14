@@ -75,14 +75,6 @@
   .nav-list__item-link--active {
     border-bottom: 2px solid $components-color;
   }
-
-  .nav-list__item-link-form--active {
-    border-bottom: 2px solid $components-color;
-  }
-
-  .nav-list__item-link-catalog--active {
-    border-bottom: 2px solid $components-color;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -105,11 +97,11 @@
     color: $main-back-color;
   }
 
-  .nav-list__item-link--active {
+  .page-header--position .nav-list__item-link--active {
     border-bottom: 2px solid $main-back-color;
   }
 
-  .nav-list__item-link-form--active {
+  .nav-list__item-link--active {
     border-bottom: 2px solid $components-color;
   }
 }

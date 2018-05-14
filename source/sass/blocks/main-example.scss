@@ -414,7 +414,7 @@
     height: 463px;
     margin-top: 180px;
 
-    background: linear-gradient(to right, #f2f2f2 48%, #eaeaea 48%);
+    background: linear-gradient(to right, #f2f2f2 53%, #eaeaea 53%);
 
     box-sizing: border-box;
   }
@@ -522,17 +522,17 @@
   }
 
   .main-example__range-element {
-    top: -43px;
+    top: -46px;
 
     width: 400px;
     margin: 0 17px;
 
     &::before {
-      left: 196px;
+      left: 198px;
     }
 
     &::after {
-      left: 208px;
+      left: 210px;
     }
   }
 

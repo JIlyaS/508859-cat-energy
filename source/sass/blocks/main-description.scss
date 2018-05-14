@@ -1,4 +1,4 @@
-.main-descrition {
+.main-description {
   padding: 0 20px;
   padding-top: 5px;
   margin-bottom: -13px;
@@ -8,22 +8,22 @@
   @include reset-list();
 }
 
-.main-descrition__item {
+.main-description__item {
   margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .main-descrition {
+  .main-description {
     padding: 0 30px;
   }
 
-  .main-descrition__item {
+  .main-description__item {
     margin-bottom: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-descrition {
+  .main-description {
     padding: 0 40px;
     margin-bottom: -16px;
   }
@@ -35,7 +35,7 @@
     justify-content: space-between;
   }
 
-  .main-descrition__item {
+  .main-description__item {
     padding: 0;
   }
 }

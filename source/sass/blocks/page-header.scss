@@ -89,7 +89,7 @@
     background-image: url("../img/icon-close.svg");
   }
 
-  .page-header--nojs .page-header__burger {
+  .page-header__burger--nojs {
     display: none;
   }
 
@@ -97,7 +97,7 @@
     display: block;
   }
 
-  .page-header--nojs .page-header__logo-image {
+  .page-header__logo-link--nojs .page-header__logo-image {
     margin-left: 40px;
   }
 }

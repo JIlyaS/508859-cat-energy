@@ -141,15 +141,16 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 100% 0;
-    background-size: 650px auto;
+    background-size: 650px 695px;
   }
 
   /* Ретинизация */
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
     (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
-    .main-header__block {
+    .main-header {
       background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 650px auto;
+      background-position: 100% 0;
+      background-size: 650px 695px;
     }
   }
 

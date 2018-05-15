@@ -8,9 +8,11 @@
   justify-content: space-around;
 
   min-height: 115px;
-  padding: 0 20px;
+  padding: 25px 20px;
 
   background-color: $main-back-color;
+
+  box-sizing: border-box;
 }
 
 .page-footer__address-block--color {
@@ -33,7 +35,6 @@
 
 .page-footer__invitation {
   display: block;
-  vertical-align: center;
 
   width: 140px;
 
@@ -46,7 +47,6 @@
 .page-footer__address {
   z-index: 2;
   display: block;
-  vertical-align: center;
 
   width: 140px;
 
@@ -156,6 +156,9 @@
   width: 100%;
   min-height: 78px;
   margin-top: -2px;
+  padding: 20px 0;
+
+  box-sizing: border-box;
 }
 
 .page-footer__htmlacademy-link {
@@ -261,7 +264,9 @@
     justify-content: space-between;
 
     min-height: 150px;
-    padding: 0 30px;
+    padding: 31px 30px;
+
+    box-sizing: border-box;
   }
 
   .page-footer__logo-img {
@@ -284,6 +289,7 @@
     margin: 0;
     margin-right: -20px;
     width: 162px;
+    min-height: 100%;
   }
 
   .page-footer__htmlacademy-link {
@@ -362,8 +368,8 @@
   .page-footer__footer-bottom {
     justify-content: space-between;
 
-    padding: 0 40px;
-    padding-top: 15px;
+    padding: 50px 40px;
+    // padding-top: 15px;
 
     box-sizing: border-box;
   }

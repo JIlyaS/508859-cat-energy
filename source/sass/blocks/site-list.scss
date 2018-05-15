@@ -16,12 +16,17 @@
   width: 280px;
   min-height: 60px;
   padding-left: 80px;
+  margin-bottom: 20px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: $paragraph-font-color;
   box-sizing: border-box;
+}
+
+.site-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .site-list__item-content {
@@ -212,6 +217,7 @@
     padding-right: 110px;
     padding-left: 0;
     padding-top: 113px;
+    margin-bottom: 0;
 
     font-size: 16px;
     line-height: 24px;

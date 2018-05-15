@@ -284,6 +284,7 @@
     position: absolute;
     top: -40px;
     left: 382px;
+    z-index: 2;
 
     width: 200px;
     height: 517px;
@@ -304,7 +305,10 @@
   .main-example__image-after {
     position: absolute;
     display: inline-block;
-    z-index: 2;
+    width: 690px;
+    height: 517px;
+    z-index: 3;
+
     margin-left: -337px;
   }
 

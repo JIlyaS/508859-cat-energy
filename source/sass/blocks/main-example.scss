@@ -136,6 +136,10 @@
   }
 }
 
+.main-example__range-circle {
+  display: none;
+}
+
 .main-example__range-start,
 .main-example__range-end {
   position: relative;
@@ -348,25 +352,33 @@
     border: none;
 
     &::before {
-      top: -14px;
-      left: 198px;
-      width: 31px;
-      height: 31px;
-
-      border: 1px solid #cdcdcd;
-      border-radius: 50%;
-
-      background-color: #ffffff;
-
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      display: none;
     }
+  }
+
+  .main-example__range-circle {
+    position: absolute;
+    display: block;
+    top: 360px;
+    left: 368px;
+    width: 31px;
+    height: 31px;
+    z-index: 4;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    box-sizing: border-box;
 
     &::after {
       content: " ";
 
       position: absolute;
-      top: -1px;
-      left: 210px;
+      top: 50%;
+      left: 50%;
 
       width: 8px;
       height: 8px;
@@ -374,6 +386,17 @@
       border-radius: 50%;
 
       background-color: $components-color;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      border-color: #cdcdcd;
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: 2px solid $components-color;
     }
   }
 
@@ -530,13 +553,49 @@
 
     width: 400px;
     margin: 0 17px;
+  }
 
-    &::before {
-      left: 198px;
-    }
+    .main-example__range-circle {
+    position: absolute;
+    display: block;
+    top: -60px;
+    left: 75px;
+    width: 31px;
+    height: 31px;
+    z-index: 4;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    box-sizing: border-box;
 
     &::after {
-      left: 210px;
+      content: " ";
+
+      position: absolute;
+      top: 51%;
+      left: 51%;
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background-color: $components-color;
+      transform: translateX(-51%) translateY(-51%);
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      border-color: #cdcdcd;
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: 2px solid $components-color;
     }
   }
 

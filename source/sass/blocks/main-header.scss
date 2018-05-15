@@ -1,6 +1,5 @@
 .main-header {
   min-height: 497px;
-  // margin-bottom: 37px;
 }
 
 .main-header__block {
@@ -16,7 +15,6 @@
   padding-top: 1px;
 }
 
-/* Ретинизация */
 @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
   .main-header__block {
@@ -63,7 +61,7 @@
   top: 133px;
 
   display: inline-block;
-  width: 280px; // 100%
+  width: 280px;
 
   font-size: 14px;
   line-height: 40px;
@@ -144,7 +142,6 @@
     background-size: 650px 695px;
   }
 
-  /* Ретинизация */
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
     (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
     .main-header {
@@ -173,7 +170,7 @@
   }
 
   .main-header__image {
-    position: absolute; //?
+    position: absolute;
     left: 215px;
     top: -245px;
 

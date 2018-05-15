@@ -14,7 +14,6 @@
   background-size: 280px 289px;
 }
 
-/* Ретинизация */
 @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
   .gifts {
@@ -36,23 +35,6 @@
   color: $add-font-color;
 
   white-space: pre-line;
-
-
-  // &::before {
-  //   content: "";
-
-  //   position: absolute;
-  //   top: -120px;
-  //   left: 113px;
-
-  //   width: 55px;
-  //   height: 60px;
-
-  //   background-image: url("../img/icon-gift.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: 0 0;
-  //   background-size: 55px 60px;
-  // }
 }
 
 .additional-catalog__gift-image {
@@ -74,7 +56,6 @@
     background-size: 708px 200px;
   }
 
-  /* Ретинизация */
   @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
     (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
     .gifts {
@@ -105,7 +86,7 @@
   }
 
   .additional-catalog__gift-image {
-    margin-left: -15px; //?
+    margin-left: -15px;
   }
 }
 
@@ -123,7 +104,6 @@
     box-sizing: border-box;
   }
 
-  /* Ретинизация */
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
     (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
     .gifts {

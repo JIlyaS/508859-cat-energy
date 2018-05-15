@@ -52,36 +52,6 @@
   cursor: pointer;
 }
 
-// .page-header__burger-line {
-//   display: block;
-
-//   position: relative;
-//   width: 24px;
-//   height: 2px;
-//   background-color: #222222;
-
-//   &::before,
-//   &::after {
-//     content: "";
-
-//     position: absolute;
-//     left: 0;
-
-//     width: 24px;
-//     height: 2px;
-
-//     background-color: #222222;
-//   }
-
-//   &::before {
-//     top: -8px;
-//   }
-
-//   &::after {
-//     top: 8px;
-//   }
-// }
-
 @media (max-width: $mobile-width-only) {
   .page-header__burger--closed {
     background-image: url("../img/icon-mobile-menu.svg");
@@ -165,7 +135,7 @@
   }
 
   .page-header__logo-image {
-    position: relative; //?
+    position: relative;
     left: 10px;
     top: -5px;
 

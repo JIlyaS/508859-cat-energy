@@ -114,13 +114,10 @@
     color: rgba(34, 34, 34, 0.3);
   }
 
-  // ... , но работает!
   &:checked ~ .form-program__control-radio::before {
     content: "";
 
     position: absolute;
-    // top: 52%;
-    // right: 27%;
     top: 8px;
     left: 8px;
 
@@ -134,8 +131,6 @@
     background-color: $components-color;
 
     border-radius: 50%;
-
-    // transform: translateY(-50%);
   }
 }
 
@@ -288,7 +283,7 @@
   resize: none;
   box-sizing: border-box;
   outline: none;
-  overflow: hidden; //?
+  overflow: hidden;
 
   &:hover {
     border-color: #cdcdcd;
@@ -353,7 +348,6 @@
   }
 
   &:active ~ .form-program__control-checkbox {
-    // border: 2px solid $components-color;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
   }
 
@@ -369,8 +363,6 @@
     content: "";
 
     position: absolute;
-    // top: 7px;
-    // left: 50%;
     top: 7px;
     left: 5px;
 
@@ -381,8 +373,6 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 21px 16px;
-
-    // transform: translateX(-50%);
   }
 }
 
@@ -495,7 +485,6 @@
     &:checked ~ .form-program__control-radio::before {
       top: 10px;
       left: 10px;
-      // transform: translateX(50%) translateY(-50%);
 
       width: 18px;
       height: 18px;
@@ -688,9 +677,6 @@
     &:checked ~ .form-program__control-checkbox::before {
       top: 10px;
       left: 9px;
-      // top: 50%;
-      // left: 40%;
-      // transform: translateX(-30%) translateY(-50%);
     }
   }
 
@@ -777,10 +763,6 @@
 
   .form-program__radio-input {
     &:checked ~ .form-program__control-radio::before {
-      // top: 10px;
-      // left: 10px;
-      // transform: translateX(-100%) translateY(-50%);
-
       width: 18px;
       height: 18px;
 

@@ -25,3 +25,8 @@ trim_trailing_whitespace = false
 indent_style = ignore
 trim_trailing_whitespace = false
 insert_final_newline = ignore
+
+[svg4everybody.min.js]
+indent_style = ignore
+trim_trailing_whitespace = false
+insert_final_newline = ignore

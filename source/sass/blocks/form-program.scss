@@ -338,28 +338,28 @@
   padding-left: 65px;
 }
 
-.form-program__checkbox-input {
+.form-checkbox__checkbox-input {
   opacity: 0;
 
-  &:hover ~ .form-program__control-checkbox,
-  &:focus ~ .form-program__control-checkbox {
+  &:hover ~ .form-checkbox__control-checkbox,
+  &:focus ~ .form-checkbox__control-checkbox {
     border-color: #bcbcbc;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
-  &:active ~ .form-program__control-checkbox {
+  &:active ~ .form-checkbox__control-checkbox {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
   }
 
-  &:disabled ~ .form-program__control-checkbox {
+  &:disabled ~ .form-checkbox__control-checkbox {
     border-color: rgba(206, 206, 206, 0.3);
   }
 
-  &:disabled ~ .form-program__checkbox-content {
+  &:disabled ~ .form-checkbox__checkbox-content {
     color: rgba(34, 34, 34, 0.3);
   }
 
-  &:checked ~ .form-program__control-checkbox::before {
+  &:checked ~ .form-checkbox__control-checkbox::before {
     content: "";
 
     position: absolute;
@@ -376,11 +376,11 @@
   }
 }
 
-.form-program__checkbox-content {
+.form-checkbox__checkbox-content {
   margin-left: -17px;
 }
 
-.form-program__control-checkbox {
+.form-checkbox__control-checkbox {
   position: absolute;
   top: -3px;
   left: -46px;
@@ -673,14 +673,14 @@
     margin-top: 28px;
   }
 
-  .form-program__checkbox-input {
-    &:checked ~ .form-program__control-checkbox::before {
+  .form-checkbox__checkbox-input {
+    &:checked ~ .form-checkbox__control-checkbox::before {
       top: 10px;
       left: 9px;
     }
   }
 
-  .form-program__control-checkbox {
+  .form-checkbox__control-checkbox {
     left: -57px;
 
     width: 38px;
@@ -865,12 +865,11 @@
     padding: 0 40px;
   }
 
-  .form-program__checkbox-list {
-    margin-left: -5px;
-  }
-
   .form-program__checkbox-title {
-    margin-top: 2px;
+    position: relative;
+    top: 12px;
+
+    margin-top: -10px;
     margin-bottom: 35px;
 
     &::before {
@@ -890,6 +889,50 @@
     }
   }
 
+  .form-program__checkbox-list {
+    position: relative;
+    justify-content: flex-start;
+
+    margin-left: -5px;
+    margin-top: 30px;
+    padding-left: 15px;
+  }
+
+  .form-program__checkbox-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-right: 75px;
+    min-width: 245px;
+
+    box-sizing: border-box;
+  }
+
+  .form-program__checkbox-item:nth-child(4n+4) {
+    margin-right: 0;
+  }
+
+  .form-checkbox {
+    margin: 0;
+  }
+
+  .form-checkbox__checkbox-content {
+    position: absolute;
+    left: 60px;
+    top: 15px;
+
+    min-width: 180px;
+
+    display: inline-block;
+    text-align: left;
+  }
+
+  .form-checkbox__control-checkbox {
+    position: absolute;
+    top: 8px;
+    left: -15px;
+  }
+
   .form-program__title-sweet,
   .form-program__title-water,
   .form-program__title-milk,
@@ -898,17 +941,17 @@
     left: 5px;
   }
 
-  .form-program__title-water {
-    margin-left: 14px;
-  }
+  // .form-program__title-water {
+  //   margin-left: 14px;
+  // }
 
-  .form-program__title-milk {
-    margin-left: 26px;
-  }
+  // .form-program__title-milk {
+  //   margin-left: 26px;
+  // }
 
-  .form-program__title-vitamin {
-    margin-left: 40px;
-  }
+  // .form-program__title-vitamin {
+  //   margin-left: 40px;
+  // }
 
   .form-program__submit-block {
     padding: 0 40px;
@@ -919,7 +962,7 @@
   .form-program__submit {
     width: 570px;
     height: 53px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .form-program__note {

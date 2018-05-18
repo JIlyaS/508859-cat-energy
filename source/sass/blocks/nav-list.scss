@@ -80,10 +80,16 @@
 @media (min-width: $desktop-width) {
   .nav-list {
     flex-direction: row;
-    margin-top: -10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 2;
+
+    margin-top: 20px;
   }
 
   .nav-list__item {
+    min-height: 50px;
     padding-right: 30px;
   }
 
